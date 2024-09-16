@@ -255,7 +255,7 @@ const Home = () => {
           </motion.div>
           {/* lagu yang diputar */}
           <audio ref={audioRef} loop>
-            <source src="./public/gambar/riziky-febian.mp3" type="audio/mp3" />
+            <source src="/gambar/riziky-febian.mp3" type="audio/mp3" />
           </audio>
         </div>
       </div>

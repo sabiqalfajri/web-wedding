@@ -36,7 +36,7 @@ const Content = ({ show, handleShow }) => {
             borderTopRightRadius: "20rem",
             paddingTop: "1rem",
           }}
-          src="./public/gambar/ismail.jpg"
+          src="/gambar/ismail.jpg"
           alt="Calon satu"
         />
 
@@ -92,7 +92,7 @@ const Content = ({ show, handleShow }) => {
               borderTopRightRadius: "20rem",
               paddingTop: "1rem",
             }}
-            src="./public/gambar/mistriasih.jpg"
+            src="/gambar/mistriasih.jpg"
             alt="Calon kedua"
           />
 
@@ -127,7 +127,7 @@ const Content = ({ show, handleShow }) => {
               textAlign: "center",
             }}
           >
-            Putra dari Bapak Hadi Sugito dan Ibu Tusinem <br /> Watuagung -
+            Putri dari Bapak Hadi Sugito dan Ibu Tusinem <br /> Watuagung -
             Tambak
           </motion.p>
           <div>
