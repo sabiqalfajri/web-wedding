@@ -192,4 +192,5 @@ body {
   background-image: url("/gambar/bg-closing.png");
   background-size: cover;
   background-position: center;
+  height: 100vh;
 }

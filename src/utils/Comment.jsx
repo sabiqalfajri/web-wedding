@@ -18,16 +18,13 @@ const Coment = ({ article }) => {
         textAlign: "center",
         boxSizing: "border-box",
         maxWidth: "100%",
-        paddingLeft: "1.5rem",
-        paddingRight: "1.5rem",
-        boxSizing: "border-box",
         backgroundImage: `url(${src})`,
         backgroundPosition: "center",
         backgroundSize: "contain",
-        marginBottom: "10rem",
+        height: "100vh",
       }}
     >
-      <Col md={6} className="mx-auto">
+      {/* <Col md={6} className="mx-auto">
         <h2
           style={{
             marginBottom: "2rem",
@@ -64,7 +61,7 @@ const Coment = ({ article }) => {
             </p>
           </div>
         </div>
-      </Col>
+      </Col> */}
     </Row>
   );
 };

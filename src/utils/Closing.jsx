@@ -13,48 +13,51 @@ const Closing = () => {
           width: "100%",
           display: "flex",
           flexDirection: "column",
+          boxSizing: "border-box",
         }}
       >
-        <Row>
-          <Col>
-            <img
-              src="/gambar/border-slideterakhir.png"
-              alt=""
-              style={{
-                maxWidth: "30rem",
-                height: "auto",
-              }}
-            />
-          </Col>
-          <Col>
-            <p
-              style={{
-                marginTop: "1rem",
-                fontSize: "0.8rem",
-              }}
-            >
-              Menjadi suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i
-              berkenan hadir dalam hari bahagia ini. Terima kasih atas segala
-              ucapan, doa, dan perhatian yang diberikan
-            </p>
-            <strong
-              style={{
-                fontSize: "1.1rem",
-              }}
-            >
-              See you on your wedding day!
-            </strong>
-            <strong
-              style={{
-                fontSize: "1.2rem",
-                fontFamily: "Dancing Script",
-                marginTop: "1rem",
-              }}
-            >
-              Mail & Asih
-            </strong>
-          </Col>
-        </Row>
+        <img
+          src="/gambar/border-slideterakhir.png"
+          alt=""
+          style={{
+            maxWidth: "25rem",
+            height: "auto",
+          }}
+        />
+        <div
+          style={{
+            maxWidth: "25rem",
+          }}
+        >
+          <p
+            style={{
+              marginTop: "-8rem",
+            }}
+          >
+            Menjadi suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i
+            berkenan hadir dalam hari bahagia ini. Terima kasih atas segala
+            ucapan, doa, dan perhatian yang diberikan
+          </p>
+        </div>
+        <div
+          style={{
+            maxWidth: "20rem",
+          }}
+        >
+          {" "}
+          <strong>See you on your wedding day!</strong>
+          <strong
+            style={{
+              fontSize: "1.2rem",
+              fontFamily: "Dancing Script",
+              marginTop: "1rem",
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
+            Mail & Asih
+          </strong>
+        </div>
       </div>
     </>
   );
