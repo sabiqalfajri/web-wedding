@@ -168,7 +168,7 @@ body {
 }
 
 .parallax {
-  background-image: url("/gambar/background-revisi.png");
+  background-image: url("/gambar/Bgslide-2-revisi.png");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -177,4 +177,19 @@ body {
   width: 100%;
   transition: transform 0.2s ease-out;
   overflow: hidden;
+}
+.timeline-image {
+  background-image: url("/gambar/couple4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.image-kedua {
+  background-image: url("/gambar/couple5.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.closing {
+  background-image: url("/gambar/bg-closing.png");
+  background-size: cover;
+  background-position: center;
 }

@@ -1,17 +1,15 @@
-import { DiscussionEmbed, CommentCount } from "disqus-react";
 import { Row, Col, Button } from "react-bootstrap";
 import React, { useEffect } from "react";
-import { useState } from "react";
-import HyvorTalkComments from "./hyvorTalk";
+import { Comments } from "@hyvor/hyvor-talk-react";
+import { CommentCount } from "@hyvor/hyvor-talk-react";
+import { CommentCounts } from "@hyvor/hyvor-talk-base";
 
 const Coment = ({ article }) => {
-  const disqusShortname = "wedding-zbuegcb3d0";
-  const disqusConfig = {
-    url: article.url,
-    identifier: article.id,
-    title: article.title,
-    language: "id",
-  };
+  useEffect(() => {
+    CommentCounts.load({
+      "website-id": "11900",
+    });
+  }, []);
   const src = "/gambar/information.png";
 
   return (
@@ -53,7 +51,18 @@ const Coment = ({ article }) => {
             height: "auto",
           }}
         >
-          <HyvorTalkComments />
+          <Comments
+            website-id={11900} // Ganti dengan ID website dari Hyvor Talk
+            page-id="unique-page-1" // Ganti dengan ID unik untuk halaman ini
+          />
+          <div>
+            <p>
+              Halaman 1: <CommentCount page-id="page-1" />
+            </p>
+            <p>
+              Halaman 2: <CommentCount page-id="page-2" />
+            </p>
+          </div>
         </div>
       </Col>
     </Row>

@@ -5,7 +5,7 @@ const Surat = () => {
   const src = "/gambar/Paper.png";
 
   const text =
-    "Dan diantara tanda tanda kekuasaan - Nya ialah diciptakan-Nya unutkmu pasangan hidup dari jenismu sendiri, agar kamu mendapat ketenangan hati dan dijadikan-Nya kasih sayang diantara kamu, sesungguhnya yang demikian menjadi tanda-tanda kebesaran-Nya bagi orang-orang yang berfikir.";
+    "Dan diantara tanda tanda kekuasaan - Nya ialah diciptakan-Nya untukmu pasangan hidup dari jenismu sendiri, agar kamu mendapat ketenangan hati dan dijadikan-Nya kasih sayang diantara kamu, sesungguhnya yang demikian menjadi tanda-tanda kebesaran-Nya bagi orang-orang yang berfikir.";
 
   const [displayedText, setDisplayedText] = useState("");
   const [hasAnimated, setHasAnimated] = useState(false);

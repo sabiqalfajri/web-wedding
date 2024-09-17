@@ -93,7 +93,7 @@ const Alamat = () => {
                       }}
                     >
                       <FaCalendarAlt />
-                      <span>Rabu, 16 Oktober 2024</span>
+                      <span>Kamis, 17 Oktober 2024</span>
                     </Col>
                   </Row>
                 </Card.Body>

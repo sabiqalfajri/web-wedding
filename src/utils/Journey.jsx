@@ -109,7 +109,7 @@ const Journey = () => {
                     ease: "easeIn",
                     duration: 1,
                   }}
-                  className="timeline-image"
+                  className="timeline-image image-kedua"
                   style={{
                     marginLeft: "1.3rem",
                   }}
@@ -132,7 +132,7 @@ const Journey = () => {
                   }}
                 >
                   <div className="timeline-heading">
-                    <h4>Mulai Serius</h4>
+                    <h4>Tunangan</h4>
                     <strong style={{ marginTop: "1rem" }}>
                       10 November 2022
                     </strong>

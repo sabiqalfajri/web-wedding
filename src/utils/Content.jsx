@@ -73,7 +73,11 @@ const Content = ({ show, handleShow }) => {
         >
           Putra dari Bapak Sulkhani dan Ibu Rusmini <br /> Buntu - Kroya
         </motion.p>
-        <div>
+        <div
+          style={{
+            paddingBottom: "2rem",
+          }}
+        >
           <motion.img
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
