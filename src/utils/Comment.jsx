@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { Comments, CommentCount } from "@hyvor/hyvor-talk-react";
 
 const Coment = () => {
+  const src = "/gambar/information.png";
   return (
     <div
       style={{
@@ -16,17 +17,15 @@ const Coment = () => {
       }}
     >
       <div>
-        <h1>Halaman Komentar</h1>
         {/* Komponen Comments untuk menampilkan komentar */}
         <Comments
           website-id="11900" // Ganti dengan ID website dari Hyvor Talk Anda
           page-id="home-page" // Ganti dengan ID unik halaman Anda
         />
-        <h2>Jumlah Komentar</h2>
+
         {/* Komponen CommentCount untuk menampilkan jumlah komentar */}
-        <p>
-          Jumlah Komentar: <CommentCount page-id="home-page" />
-        </p>
+
+        <CommentCount page-id="home-page" />
       </div>
     </div>
   );
