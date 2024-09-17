@@ -1,15 +1,8 @@
 import { Row, Col, Button } from "react-bootstrap";
 import React, { useEffect } from "react";
 import { Comments, CommentCount } from "@hyvor/hyvor-talk-react";
-import { CommentCounts } from "@hyvor/hyvor-talk-base";
 
 const Coment = () => {
-  useEffect(() => {
-    CommentCounts.load({
-      "website-id": "11900",
-    });
-  }, []);
-
   return (
     <div
       style={{
@@ -26,13 +19,13 @@ const Coment = () => {
         <h1>Halaman Komentar</h1>
         {/* Komponen Comments untuk menampilkan komentar */}
         <Comments
-          website-id="11900" // ID website dari Hyvor Talk Anda
-          page-id="page-1" // ID halaman unik yang bisa Anda tentukan sendiri
+          website-id="11900" // Ganti dengan ID website dari Hyvor Talk Anda
+          page-id="home-page" // Ganti dengan ID unik halaman Anda
         />
-
+        <h2>Jumlah Komentar</h2>
         {/* Komponen CommentCount untuk menampilkan jumlah komentar */}
         <p>
-          Jumlah Komentar: <CommentCount />
+          Jumlah Komentar: <CommentCount page-id="home-page" />
         </p>
       </div>
     </div>
