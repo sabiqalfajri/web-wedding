@@ -1,3 +1,4 @@
+import { Row, Col } from "react-bootstrap";
 const Closing = () => {
   return (
     <>
@@ -10,55 +11,50 @@ const Closing = () => {
           display: "flex",
           flexDirection: "column",
           width: "100%",
+          display: "flex",
+          flexDirection: "column",
         }}
       >
-        <img
-          src="/gambar/border-slideterakhir.png"
-          alt=""
-          style={{
-            maxWidth: "30rem",
-          }}
-        />
-        <div
-          style={{
-            paddingRight: "2rem",
-            paddingLeft: "2rem",
-          }}
-        >
-          <p
-            style={{
-              marginTop: "1rem",
-            }}
-          >
-            Menjadi suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i
-            berkenan hadir dalam hari bahagia ini. Terima kasih atas segala
-            ucapan, doa, dan perhatian yang diberikan
-          </p>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              paddingBottom: "1.5rem",
-            }}
-          >
+        <Row>
+          <Col>
+            <img
+              src="/gambar/border-slideterakhir.png"
+              alt=""
+              style={{
+                maxWidth: "30rem",
+                height: "auto",
+              }}
+            />
+          </Col>
+          <Col>
+            <p
+              style={{
+                marginTop: "1rem",
+                fontSize: "0.8rem",
+              }}
+            >
+              Menjadi suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i
+              berkenan hadir dalam hari bahagia ini. Terima kasih atas segala
+              ucapan, doa, dan perhatian yang diberikan
+            </p>
             <strong
               style={{
-                fontSize: "1.5rem",
+                fontSize: "1.1rem",
               }}
             >
               See you on your wedding day!
             </strong>
             <strong
               style={{
-                fontSize: "2rem",
+                fontSize: "1.2rem",
                 fontFamily: "Dancing Script",
                 marginTop: "1rem",
               }}
             >
               Mail & Asih
             </strong>
-          </div>
-        </div>
+          </Col>
+        </Row>
       </div>
     </>
   );

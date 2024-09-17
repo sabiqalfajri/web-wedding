@@ -40,6 +40,7 @@ const Alamat = () => {
             style={{
               fontSize: "0.9rem",
               padding: "2rem",
+              marginTop: "1rem",
             }}
           >
             Alamat: JL.Teuku Umar rt 02 rw 03 Buntu-Situmang Kec. Kroya Kab.
