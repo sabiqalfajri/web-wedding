@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { CommentCount } from "@hyvor/hyvor-talk-react";
 import { CommentCounts } from "@hyvor/hyvor-talk-base";
+import { Comments } from "@hyvor/hyvor-talk-react";
 
 const Coment = () => {
   useEffect(() => {
@@ -28,6 +29,8 @@ const Coment = () => {
         }}
       >
         <CommentCount page-id="page_comment" />
+
+        <Comments website-id="11876" page-id="page_comment" />
       </div>
     </div>
   );
