@@ -1,7 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "/mail-asih/(.*)",
+      "source": "/mail&asih/(.*)",
       "destination": "/index.html"
     },
     {
