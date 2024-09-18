@@ -32,6 +32,9 @@ importers:
       react-bootstrap:
         specifier: ^2.10.4
         version: 2.10.4(@types/react@18.3.5)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react-disqus-comments:
+        specifier: ^1.4.0
+        version: 1.4.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-dom:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
@@ -1233,6 +1236,12 @@ packages:
     peerDependenciesMeta:
       '@types/react':
         optional: true
+
+  react-disqus-comments@1.4.0:
+    resolution: {integrity: sha512-NkCNsnBSujliii5N2HbA6Wy5z2s6GtCtPaJ0D6GWNMSKnP8wmEtQ3u2qAeG9+xHJE2cMRFmfqMpDeJtBay38RA==}
+    peerDependencies:
+      react: '>=15.0.1 < 17.0.0'
+      react-dom: '>=15.0.1 < 17.0.0'
 
   react-dom@18.3.1:
     resolution: {integrity: sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==}
@@ -2760,6 +2769,11 @@ snapshots:
       warning: 4.0.3
     optionalDependencies:
       '@types/react': 18.3.5
+
+  react-disqus-comments@1.4.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+    dependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   react-dom@18.3.1(react@18.3.1):
     dependencies:
