@@ -76,8 +76,18 @@ const Alamat = () => {
                   width: "350px",
                 }}
               >
-                <Card.Header>Resepsi</Card.Header>
-                <Card.Body>
+                <Card.Header
+                  style={{
+                    border: "1px solid black",
+                  }}
+                >
+                  Resepsi
+                </Card.Header>
+                <Card.Body
+                  style={{
+                    border: "1px solid black",
+                  }}
+                >
                   <Row>
                     <Col
                       md={6}
@@ -114,6 +124,10 @@ const Alamat = () => {
                   className="text-muted footer-card"
                   style={{
                     fontSize: "0.9rem",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    border: "1px solid black",
                   }}
                 >
                   {" "}
@@ -123,7 +137,7 @@ const Alamat = () => {
               </Card>
             </motion.div>
             <motion.div
-              initial={{ x: 100, opacity: 0 }}
+              initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{
                 delay: 0.5,
@@ -139,8 +153,18 @@ const Alamat = () => {
                   width: "350px",
                 }}
               >
-                <Card.Header>Akad Nikah</Card.Header>
-                <Card.Body>
+                <Card.Header
+                  style={{
+                    border: "1px solid black",
+                  }}
+                >
+                  Akad Nikah
+                </Card.Header>
+                <Card.Body
+                  style={{
+                    border: "1px solid black",
+                  }}
+                >
                   <Row>
                     <Col
                       md={6}
@@ -180,6 +204,7 @@ const Alamat = () => {
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
+                    border: "1px solid black",
                   }}
                 >
                   {" "}
@@ -188,11 +213,6 @@ const Alamat = () => {
                 </Card.Footer>
               </Card>
             </motion.div>
-
-            <motion.div
-              initial={{ rotate: -100, opacity: 0 }} // Mulai dengan rotasi -90 derajat
-              whileInView={{ rotate: 0, opacity: 1 }} // Rotasi ke posisi normal
-            ></motion.div>
 
             {/* // untuk maps tampil */}
             <motion.div>
