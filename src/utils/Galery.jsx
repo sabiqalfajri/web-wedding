@@ -46,7 +46,7 @@ const Galery = () => {
             }}
           >
             <img
-              src="gambar/couple1.jpg"
+              src="/gambar/couple1.jpg"
               alt=""
               style={{
                 maxWidth: "250px",
@@ -69,7 +69,7 @@ const Galery = () => {
             }}
           >
             <img
-              src="gambar/couple2.jpg"
+              src="/gambar/couple2.jpg"
               alt=""
               style={{
                 maxWidth: "250px",
@@ -96,7 +96,7 @@ const Galery = () => {
             }}
           >
             <img
-              src="gambar/couple7.jpg"
+              src="/gambar/couple7.jpg"
               alt=""
               style={{
                 maxWidth: "9rem",
@@ -127,7 +127,7 @@ const Galery = () => {
             }}
           >
             <img
-              src="gambar/couple6.jpg"
+              src="/gambar/couple6.jpg"
               alt=""
               style={{
                 maxWidth: "8rem",
@@ -177,7 +177,7 @@ const Galery = () => {
             }}
           >
             <img
-              src="gambar/couple2.jpg"
+              src="/gambar/couple2.jpg"
               alt=""
               style={{
                 maxWidth: "auto",
@@ -205,7 +205,7 @@ const Galery = () => {
             }}
           >
             <img
-              src="gambar/couple3.jpg"
+              src="/gambar/couple3.jpg"
               alt=""
               style={{
                 maxHeight: "150px",
