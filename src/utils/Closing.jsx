@@ -12,7 +12,6 @@ const Closing = () => {
           flexDirection: "column",
           width: "100%",
           display: "flex",
-          flexDirection: "column",
           boxSizing: "border-box",
         }}
       >
