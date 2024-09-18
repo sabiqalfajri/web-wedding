@@ -45,17 +45,19 @@ const Galery = () => {
               scale: { type: "spring", stiffness: 60 },
             }}
           >
-            <img
-              src="/gambar/couple1.jpg"
-              alt=""
-              style={{
-                maxWidth: "250px",
-                width: "100%",
-                maxHeight: "200px",
-                objectFit: "cover",
-                paddingRight: "1rem",
-              }}
-            />
+            <a href="/gambar/couple1.jpg">
+              <img
+                src="/gambar/couple1.jpg"
+                alt=""
+                style={{
+                  maxWidth: "250px",
+                  width: "100%",
+                  maxHeight: "200px",
+                  objectFit: "cover",
+                  paddingRight: "1rem",
+                }}
+              />
+            </a>
           </motion.div>
           <motion.div
             className="image image-2"
@@ -68,16 +70,18 @@ const Galery = () => {
               scale: { type: "spring", stiffness: 60 },
             }}
           >
-            <img
-              src="/gambar/couple2.jpg"
-              alt=""
-              style={{
-                maxWidth: "250px",
-                width: "100%",
-                objectFit: "cover",
-                paddingLeft: "1rem",
-              }}
-            />
+            <a href="/gambar/couple2.jpg">
+              <img
+                src="/gambar/couple2.jpg"
+                alt=""
+                style={{
+                  maxWidth: "250px",
+                  width: "100%",
+                  objectFit: "cover",
+                  paddingLeft: "1rem",
+                }}
+              />
+            </a>
           </motion.div>
           <motion.div
             className="image image-3"
@@ -95,20 +99,22 @@ const Galery = () => {
               scale: { type: "spring", stiffness: 60 },
             }}
           >
-            <img
-              src="/gambar/couple7.jpg"
-              alt=""
-              style={{
-                maxWidth: "9rem",
-                width: "100%",
-                maxHeight: "150px",
-                height: "100%",
-                objectFit: "cover",
-                position: "absolute",
-                top: "140%",
-                left: "65%",
-              }}
-            />
+            <a href="/gambar/couple7.jpg">
+              <img
+                src="/gambar/couple7.jpg"
+                alt=""
+                style={{
+                  maxWidth: "9rem",
+                  width: "100%",
+                  maxHeight: "150px",
+                  height: "100%",
+                  objectFit: "cover",
+                  position: "absolute",
+                  top: "140%",
+                  left: "65%",
+                }}
+              />
+            </a>
           </motion.div>
           <motion.div
             className="image image-4"
@@ -126,20 +132,22 @@ const Galery = () => {
               scale: { type: "spring", stiffness: 60 },
             }}
           >
-            <img
-              src="/gambar/couple6.jpg"
-              alt=""
-              style={{
-                maxWidth: "8rem",
-                width: "100%",
-                maxHeight: "150px",
-                height: "100%",
-                objectFit: "cover",
-                position: "absolute",
-                top: "240%",
-                right: "70%",
-              }}
-            />
+            <a href="/gambar/couple6.jpg">
+              <img
+                src="/gambar/couple6.jpg"
+                alt=""
+                style={{
+                  maxWidth: "8rem",
+                  width: "100%",
+                  maxHeight: "150px",
+                  height: "100%",
+                  objectFit: "cover",
+                  position: "absolute",
+                  top: "240%",
+                  right: "70%",
+                }}
+              />
+            </a>
           </motion.div>
           <div
             style={{
@@ -176,19 +184,21 @@ const Galery = () => {
               scale: { type: "spring", stiffness: 60 },
             }}
           >
-            <img
-              src="/gambar/couple2.jpg"
-              alt=""
-              style={{
-                maxWidth: "auto",
-                maxHeight: "200px",
-                height: "100%",
-                width: "100%",
-                objectFit: "cover",
-                marginTop: "2rem",
-                marginRight: "2rem",
-              }}
-            />
+            <a href="/gambar/couple2.jpg">
+              <img
+                src="/gambar/couple2.jpg"
+                alt=""
+                style={{
+                  maxWidth: "auto",
+                  maxHeight: "200px",
+                  height: "100%",
+                  width: "100%",
+                  objectFit: "cover",
+                  marginTop: "2rem",
+                  marginRight: "2rem",
+                }}
+              />
+            </a>
           </motion.div>
           <motion.div
             className="image image-6"
@@ -204,18 +214,20 @@ const Galery = () => {
               scale: { type: "spring", stiffness: 60 },
             }}
           >
-            <img
-              src="/gambar/couple3.jpg"
-              alt=""
-              style={{
-                maxHeight: "150px",
-                height: "100%",
-                maxWidth: "250px",
-                width: "100%",
-                marginTop: "5rem",
-                objectFit: "cover",
-              }}
-            />
+            <a href="/gambar/couple3.jpg">
+              <img
+                src="/gambar/couple3.jpg"
+                alt=""
+                style={{
+                  maxHeight: "150px",
+                  height: "100%",
+                  maxWidth: "250px",
+                  width: "100%",
+                  marginTop: "5rem",
+                  objectFit: "cover",
+                }}
+              />
+            </a>
           </motion.div>
         </div>
       </div>

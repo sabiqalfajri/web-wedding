@@ -24,9 +24,9 @@ const Content = ({ show, handleShow }) => {
           transition={{
             delay: 0.2,
             x: { type: "spring", stiffness: 60 },
-            opacity: { duration: 3 },
+            opacity: { duration: 1 },
             ease: "easeIn",
-            duration: 1,
+            duration: 3,
           }}
           style={{
             marginTop: "3.5rem",
@@ -84,9 +84,9 @@ const Content = ({ show, handleShow }) => {
             transition={{
               delay: 0.4,
               x: { type: "spring", stiffness: 60 },
-              opacity: { duration: 3 },
+              opacity: { duration: 1 },
               ease: "easeIn",
-              duration: 1,
+              duration: 3,
             }}
             style={{
               marginTop: "3.5rem",

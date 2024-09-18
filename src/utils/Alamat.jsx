@@ -59,20 +59,21 @@ const Alamat = () => {
               marginBottom: "2rem",
             }}
           >
-            <motion.div>
-              <motion.Card
+            <motion.div
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.3,
+                x: { type: "spring", stiffness: 60 },
+                opacity: { duration: 1 },
+                ease: "easeIn",
+                duration: 1,
+              }}
+            >
+              <Card
                 className="alamat text-center mt-2"
                 style={{
                   width: "350px",
-                }}
-                initial={{ x: -100, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                transition={{
-                  delay: 0.3,
-                  x: { type: "spring", stiffness: 60 },
-                  opacity: { duration: 2 },
-                  ease: "easeIn",
-                  duration: 1,
                 }}
               >
                 <Card.Header>Resepsi</Card.Header>
@@ -89,7 +90,7 @@ const Alamat = () => {
                         gap: "0.3rem",
                       }}
                     >
-                      <FaClock />
+                      <FaClock style={{ fontSize: "1.5rem" }} />
                       <span>08.00 - Selesai</span>
                     </Col>
                     <Col
@@ -104,7 +105,7 @@ const Alamat = () => {
                         gap: "0.3rem",
                       }}
                     >
-                      <FaCalendarAlt />
+                      <FaCalendarAlt style={{ fontSize: "1.5rem" }} />
                       <span>Rabu, 16 Oktober 2024</span>
                     </Col>
                   </Row>
@@ -119,20 +120,23 @@ const Alamat = () => {
                   <FaMapMarkerAlt style={{ fontSize: "1.5rem" }} />
                   <strong>Rumah Mempelai Pria</strong>
                 </Card.Footer>
-              </motion.Card>
-              <motion.Card
+              </Card>
+            </motion.div>
+            <motion.div
+              initial={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.5,
+                x: { type: "spring", stiffness: 60 },
+                opacity: { duration: 1 },
+                ease: "easeIn",
+                duration: 1,
+              }}
+            >
+              <Card
                 className="alamat text-center mt-2"
                 style={{
                   width: "350px",
-                }}
-                initial={{ x: 100, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                transition={{
-                  delay: 0.5,
-                  x: { type: "spring", stiffness: 60 },
-                  opacity: { duration: 2 },
-                  ease: "easeIn",
-                  duration: 1,
                 }}
               >
                 <Card.Header>Akad Nikah</Card.Header>
@@ -149,7 +153,7 @@ const Alamat = () => {
                         gap: "0.3rem",
                       }}
                     >
-                      <FaClock />
+                      <FaClock style={{ fontSize: "1.5rem" }} />
                       <span>08.00 - Selesai</span>
                     </Col>
                     <Col
@@ -179,11 +183,12 @@ const Alamat = () => {
                   }}
                 >
                   {" "}
-                  <FaMapMarkerAlt />
+                  <FaMapMarkerAlt style={{ fontSize: "1.5rem" }} />
                   <strong>Rumah Mempelai Wanita</strong>
                 </Card.Footer>
-              </motion.Card>
+              </Card>
             </motion.div>
+
             <motion.div
               initial={{ rotate: -100, opacity: 0 }} // Mulai dengan rotasi -90 derajat
               whileInView={{ rotate: 0, opacity: 1 }} // Rotasi ke posisi normal
