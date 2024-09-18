@@ -24,7 +24,7 @@ const Content = ({ show, handleShow }) => {
           transition={{
             delay: 0.2,
             x: { type: "spring", stiffness: 60 },
-            opacity: { duration: 1 },
+            opacity: { duration: 3 },
             ease: "easeIn",
             duration: 1,
           }}
@@ -84,7 +84,7 @@ const Content = ({ show, handleShow }) => {
             transition={{
               delay: 0.4,
               x: { type: "spring", stiffness: 60 },
-              opacity: { duration: 1 },
+              opacity: { duration: 3 },
               ease: "easeIn",
               duration: 1,
             }}

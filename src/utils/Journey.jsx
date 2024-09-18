@@ -80,7 +80,7 @@ const Journey = () => {
                   }}
                 >
                   <div className="timeline-heading">
-                    <h4>Pertama bertemu</h4>
+                    <h4>Bertemu</h4>
                     <strong style={{ marginTop: "1rem" }}>
                       5 Agustus 2019
                     </strong>

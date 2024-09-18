@@ -22,7 +22,7 @@ const Home = () => {
 
   const [scroll, setScroll] = useState(false);
   const contenRef = useRef(null);
-  const weddingDate = new Date("2024-10-17T00:00:00");
+  const weddingDate = new Date("2024-10-16T00:00:00");
 
   const calculateTimeLeft = () => {
     const now = new Date();

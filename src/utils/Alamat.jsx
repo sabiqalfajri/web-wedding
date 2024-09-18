@@ -1,6 +1,11 @@
 import { Button, Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
-import { FaCalendar, FaCalendarAlt, FaClock } from "react-icons/fa";
+import {
+  FaCalendar,
+  FaCalendarAlt,
+  FaClock,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Alamat = () => {
@@ -54,14 +59,80 @@ const Alamat = () => {
               marginBottom: "2rem",
             }}
           >
-            <motion.div
-              initial={{ rotate: -100, opacity: 0 }}
-              whileInView={{ rotate: 0, opacity: 1 }}
-            >
-              <Card
+            <motion.div>
+              <motion.Card
                 className="alamat text-center mt-2"
                 style={{
                   width: "350px",
+                }}
+                initial={{ x: -100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.3,
+                  x: { type: "spring", stiffness: 60 },
+                  opacity: { duration: 2 },
+                  ease: "easeIn",
+                  duration: 1,
+                }}
+              >
+                <Card.Header>Resepsi</Card.Header>
+                <Card.Body>
+                  <Row>
+                    <Col
+                      md={6}
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        textAlign: "center",
+                        gap: "0.3rem",
+                      }}
+                    >
+                      <FaClock />
+                      <span>08.00 - Selesai</span>
+                    </Col>
+                    <Col
+                      md={6}
+                      className="mt-1"
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        textAlign: "center",
+                        gap: "0.3rem",
+                      }}
+                    >
+                      <FaCalendarAlt />
+                      <span>Rabu, 16 Oktober 2024</span>
+                    </Col>
+                  </Row>
+                </Card.Body>
+                <Card.Footer
+                  className="text-muted footer-card"
+                  style={{
+                    fontSize: "0.9rem",
+                  }}
+                >
+                  {" "}
+                  <FaMapMarkerAlt style={{ fontSize: "1.5rem" }} />
+                  <strong>Rumah Mempelai Pria</strong>
+                </Card.Footer>
+              </motion.Card>
+              <motion.Card
+                className="alamat text-center mt-2"
+                style={{
+                  width: "350px",
+                }}
+                initial={{ x: 100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.5,
+                  x: { type: "spring", stiffness: 60 },
+                  opacity: { duration: 2 },
+                  ease: "easeIn",
+                  duration: 1,
                 }}
               >
                 <Card.Header>Akad Nikah</Card.Header>
@@ -93,7 +164,7 @@ const Alamat = () => {
                         gap: "0.3rem",
                       }}
                     >
-                      <FaCalendarAlt />
+                      <FaCalendarAlt style={{ fontSize: "1.5rem" }} />
                       <span>Kamis, 17 Oktober 2024</span>
                     </Col>
                   </Row>
@@ -102,13 +173,16 @@ const Alamat = () => {
                   className="text-muted footer-card"
                   style={{
                     fontSize: "0.9rem",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
                   }}
                 >
                   {" "}
-                  Saat acara akad diharapkan untuk kondusif menjaga ketertiban
-                  dan kenyamanan bersama
+                  <FaMapMarkerAlt />
+                  <strong>Rumah Mempelai Wanita</strong>
                 </Card.Footer>
-              </Card>
+              </motion.Card>
             </motion.div>
             <motion.div
               initial={{ rotate: -100, opacity: 0 }} // Mulai dengan rotasi -90 derajat
@@ -116,15 +190,7 @@ const Alamat = () => {
             ></motion.div>
 
             {/* // untuk maps tampil */}
-            <motion.div
-              initial={{ width: "1%", opacity: 0 }}
-              whileInView={{ width: "100%", opacity: 1 }}
-              transition={{
-                duration: 0.4, // Durasi lebih panjang untuk efek halus
-                ease: "easeInOut",
-                delay: 0.1, // Mulai sedikit setelah resepsi
-              }}
-            >
+            <motion.div>
               {/* ini adalah bagian yang saya ingin tambahkan gambar maps */}
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.3489396830137!2d109.25147817411462!3d-7.426581873155667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655e99e023afb1%3A0x58606b87c5866b75!2sJl.%20Penatusan%201%20No.9%2C%20Purwokerto%20Wetan%2C%20Kec.%20Purwokerto%20Tim.%2C%20Kabupaten%20Banyumas%2C%20Jawa%20Tengah%2053111!5e0!3m2!1sid!2sid!4v1725937980981!5m2!1sid!2sid"

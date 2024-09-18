@@ -20,11 +20,17 @@ const Coment = () => {
     >
       <div
         style={{
-          paddingRight: "1.5rem",
-          paddingLeft: "1.5rem",
+          width: "100%",
+          maxWidth: "600px",
         }}
       >
-        <div className="comment-input">
+        <div
+          className="comment-input"
+          style={{
+            paddingLeft: "1rem",
+            paddingRight: "1rem",
+          }}
+        >
           <Comments website-id="11876" page-id="default-page-id" />
         </div>
       </div>
