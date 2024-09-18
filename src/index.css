@@ -194,3 +194,15 @@ body {
   background-position: center;
   height: 100vh;
 }
+.comment-input {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+.comments-list {
+  flex: 1; /* Membuat bagian ini menempati ruang yang tersisa */
+  overflow-y: auto; /* Mengaktifkan scroll untuk bagian ini */
+  padding: 1rem;
+  border: 1px solid #ccc;
+  margin-top: 1rem;
+}

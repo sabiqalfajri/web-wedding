@@ -28,9 +28,14 @@ const Coment = () => {
           maxWidth: "400px",
         }}
       >
-        <CommentCount page-id="page_comment" />
+        <div className="comment-input">
+          <Comments website-id="11876" page-id="default-page-id" />
+        </div>
 
-        <Comments website-id="11876" page-id="page_comment" />
+        {/* Bagian daftar komentar yang dapat di-scroll */}
+        <div className="comments-list">
+          <Comments website-id="11876" page-id="default-page-id" />
+        </div>
       </div>
     </div>
   );
