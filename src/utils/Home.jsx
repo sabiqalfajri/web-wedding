@@ -292,7 +292,7 @@ const Home = () => {
             <Alamat />
             <Gift />
             <Confirm />
-            <Coment website-id={11876} page-id={page_comment} />
+            <Coment website-id="11876" page-id="page_comment" />
             <Closing />
           </div>
         </div>

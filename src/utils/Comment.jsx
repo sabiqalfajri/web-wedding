@@ -1,9 +1,8 @@
-import { Row, Col, Button } from "react-bootstrap";
 import React, { useEffect } from "react";
 import { CommentCount } from "@hyvor/hyvor-talk-react";
 import { CommentCounts } from "@hyvor/hyvor-talk-base";
 
-const Coment = ({ url }) => {
+const Coment = () => {
   useEffect(() => {
     CommentCounts.load({
       "website-id": "11876",
@@ -28,7 +27,7 @@ const Coment = ({ url }) => {
           maxWidth: "400px",
         }}
       >
-        <CommentCount page-id={page_comment} />
+        <CommentCount page-id="page_comment" />
       </div>
     </div>
   );
