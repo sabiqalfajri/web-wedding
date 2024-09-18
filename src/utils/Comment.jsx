@@ -14,18 +14,14 @@ const Coment = () => {
   return (
     <div
       style={{
-        textAlign: "center",
-        boxSizing: "border-box",
-        maxWidth: "100%",
-        backgroundImage: `url(${src})`,
-        backgroundPosition: "center",
-        backgroundSize: "contain",
-        height: "100vh",
+        display: "flex",
+        justifyContent: "center",
       }}
     >
       <div
         style={{
-          maxWidth: "400px",
+          paddingRight: "1.5rem",
+          paddingLeft: "1.5rem",
         }}
       >
         <div className="comment-input">
