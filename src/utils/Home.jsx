@@ -12,6 +12,7 @@ import Coment from "./Comment";
 import { motion } from "framer-motion";
 import Galery from "./Galery";
 import Closing from "./Closing";
+import { Comments } from "@hyvor/hyvor-talk-react";
 
 const Home = () => {
   // gambar
@@ -291,7 +292,7 @@ const Home = () => {
             <Alamat />
             <Gift />
             <Confirm />
-            <Coment article={article} />
+            <Coment website-id={11876} page-id={page_comment} />
             <Closing />
           </div>
         </div>

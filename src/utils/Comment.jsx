@@ -1,11 +1,14 @@
 import { Row, Col, Button } from "react-bootstrap";
 import React, { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { CommentCount } from "@hyvor/hyvor-talk-react";
+import { CommentCounts } from "@hyvor/hyvor-talk-base";
 
 const Coment = ({ url }) => {
-  const { name } = useParams();
-
-  // Membuat URL dinamis berdasarkan nama tamu
+  useEffect(() => {
+    CommentCounts.load({
+      "website-id": "11876",
+    });
+  }, []);
 
   const src = "/gambar/information.png";
   return (
@@ -19,7 +22,15 @@ const Coment = ({ url }) => {
         backgroundSize: "contain",
         height: "100vh",
       }}
-    ></div>
+    >
+      <div
+        style={{
+          maxWidth: "400px",
+        }}
+      >
+        <CommentCount page-id={page_comment} />
+      </div>
+    </div>
   );
 };
 export default Coment;
