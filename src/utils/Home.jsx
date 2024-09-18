@@ -291,8 +291,8 @@ const Home = () => {
             <Alamat />
             <Gift />
             <Confirm />
-            <Coment />
             <Closing />
+            <Coment />
           </div>
         </div>
       )}

@@ -31,11 +31,6 @@ const Coment = () => {
         <div className="comment-input">
           <Comments website-id="11876" page-id="default-page-id" />
         </div>
-
-        {/* Bagian daftar komentar yang dapat di-scroll */}
-        <div className="comments-list">
-          <Comments website-id="11876" page-id="default-page-id" />
-        </div>
       </div>
     </div>
   );
