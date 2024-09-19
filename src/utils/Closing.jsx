@@ -14,12 +14,12 @@ const Closing = () => {
           overflow: "hidden",
         }}
       >
-        <div
+        {/* <div
           className="snnow"
           style={{
             zIndex: 1,
           }}
-        ></div>
+        ></div> */}
         <img
           src="/gambar/border-slideterakhir.png"
           alt=""
