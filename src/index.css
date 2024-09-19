@@ -190,7 +190,7 @@ body {
 }
 .closing {
   /* background-image: url("/gambar/bg-closing.png"); */
-  background-color: black;
+  background-color: #000;
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -201,7 +201,7 @@ body {
   padding: 1rem;
   background-color: #f9f9f9;
 }
-.snnow,
+/* .snnow,
 .snnow::after,
 .snnow::before {
   content: "";
@@ -246,4 +246,4 @@ body {
   to {
     transform: translate3d(0, 650px, 0);
   }
-}
+} */

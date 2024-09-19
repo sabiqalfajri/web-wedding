@@ -1,3 +1,5 @@
+import React from "react";
+
 const Closing = () => {
   return (
     <>
@@ -9,28 +11,24 @@ const Closing = () => {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          height: "100vh",
           textAlign: "center",
-          overflow: "hidden",
+          height: "100vh",
+          width: "100%",
         }}
       >
-        {/* <div
-          className="snnow"
-          style={{
-            zIndex: 1,
-          }}
-        ></div> */}
         <img
           src="/gambar/border-slideterakhir.png"
           alt=""
           style={{
             maxWidth: "25rem",
             height: "auto",
+            zIndex: 1,
           }}
         />
         <div
           style={{
             maxWidth: "25rem",
+            zIndex: 1,
           }}
         >
           <p
@@ -48,6 +46,7 @@ const Closing = () => {
           style={{
             maxWidth: "20rem",
             color: "white",
+            zIndex: 1,
           }}
         >
           {" "}
