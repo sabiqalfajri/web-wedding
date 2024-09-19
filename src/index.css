@@ -210,6 +210,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
+  will-change: transform;
   background-image: radial-gradient(6px 6px at 100px 50px, #fff, transparent),
     radial-gradient(8px 8px at 200px 150px, #fff, transparent),
     radial-gradient(5px 5px at 300px 250px, #fff, transparent),
@@ -240,9 +241,9 @@ body {
 }
 @keyframes snowAnim {
   from {
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translateY(650px);
+    transform: translate3d(0, 650px, 0);
   }
 }
