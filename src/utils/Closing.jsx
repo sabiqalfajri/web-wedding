@@ -23,15 +23,12 @@ const Closing = () => {
           style={{
             maxWidth: "25rem",
             height: "auto",
-            position: "relative",
-            zIndex: "1",
+            zIndex: "2",
           }}
         />
         <div
           style={{
             maxWidth: "25rem",
-            position: "relative",
-            zIndex: 1,
           }}
         >
           <p
@@ -47,8 +44,6 @@ const Closing = () => {
         <div
           style={{
             maxWidth: "20rem",
-            position: "relative",
-            zIndex: 1,
           }}
         >
           {" "}

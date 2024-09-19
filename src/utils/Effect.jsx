@@ -69,7 +69,7 @@ const Effect = () => {
       options={particlesOptions}
       style={{
         width: "100%",
-        zIndex: 0, // Pastikan salju berada di bawah elemen lain
+        zIndex: 1, // Pastikan salju berada di bawah elemen lain
       }}
     />
   );
