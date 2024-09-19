@@ -1,7 +1,9 @@
-import { Row, Col } from "react-bootstrap";
+import Effect from "./Effect";
+
 const Closing = () => {
   return (
     <>
+      <Effect />
       <div
         className="closing"
         style={{
@@ -21,11 +23,15 @@ const Closing = () => {
           style={{
             maxWidth: "25rem",
             height: "auto",
+            position: "relative",
+            zIndex: "1",
           }}
         />
         <div
           style={{
             maxWidth: "25rem",
+            position: "relative",
+            zIndex: 1,
           }}
         >
           <p
@@ -41,6 +47,8 @@ const Closing = () => {
         <div
           style={{
             maxWidth: "20rem",
+            position: "relative",
+            zIndex: 1,
           }}
         >
           {" "}

@@ -194,6 +194,16 @@ body {
   background-position: center;
   height: 100vh;
 }
+.closing::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Gelapkan background */
+  z-index: 0; /* Pastikan overlay di belakang konten */
+}
 .comment-input {
   border-bottom: 1px solid #ccc;
   padding: 1rem;

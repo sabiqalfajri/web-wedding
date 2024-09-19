@@ -10,7 +10,6 @@ const Coment = () => {
     });
   }, []);
 
-  const src = "/gambar/information.png";
   return (
     <div
       style={{
