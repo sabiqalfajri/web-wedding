@@ -1,4 +1,4 @@
-import Effect from "./Effect";
+import ParticlesComponent from "./Effect";
 import React from "react";
 
 const Closing = () => {
@@ -8,7 +8,7 @@ const Closing = () => {
         className="closing"
         style={{ position: "relative", width: "100%", height: "100vh" }}
       >
-        <Effect />
+        <ParticlesComponent />
         <div
           className="closing-content"
           style={{
