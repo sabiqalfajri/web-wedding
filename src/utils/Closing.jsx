@@ -3,7 +3,6 @@ import Effect from "./Effect";
 const Closing = () => {
   return (
     <>
-      <Effect />
       <div
         className="closing"
         style={{
@@ -17,6 +16,7 @@ const Closing = () => {
           boxSizing: "border-box",
         }}
       >
+        <Effect />
         <img
           src="/gambar/border-slideterakhir.png"
           alt=""
