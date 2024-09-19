@@ -1,20 +1,23 @@
 import Effect from "./Effect";
+import React from "react";
 
 const Closing = () => {
   return (
     <>
-      <div className="closing-container">
+      <div
+        className="closing"
+        style={{ position: "relative", width: "100%", height: "100vh" }}
+      >
         <Effect />
         <div
           className="closing-content"
           style={{
             position: "relative",
-            zIndex: 1, // Content should be above the particles
+            zIndex: 1,
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            height: "100vh",
             textAlign: "center",
           }}
         >
@@ -24,12 +27,13 @@ const Closing = () => {
             style={{
               maxWidth: "25rem",
               height: "auto",
-              zIndex: 2,
+              zIndex: 1,
             }}
           />
           <div
             style={{
               maxWidth: "25rem",
+              zIndex: 1,
             }}
           >
             <p
@@ -45,6 +49,7 @@ const Closing = () => {
           <div
             style={{
               maxWidth: "20rem",
+              zIndex: 1,
             }}
           >
             {" "}

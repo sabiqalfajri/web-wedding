@@ -188,16 +188,11 @@ body {
   background-size: cover;
   background-position: center;
 }
-.closing-container {
+.closing {
   background-image: url("/gambar/bg-closing.png");
   background-size: cover;
   background-position: center;
-  height: 100vh;
   position: relative;
-}
-.closing-content {
-  position: relative;
-  z-index: 1; /* Ensure content is above particles */
 }
 
 .comment-input {
