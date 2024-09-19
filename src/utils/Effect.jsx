@@ -70,6 +70,7 @@ const Effect = () => {
       style={{
         width: "100%",
         zIndex: 1, // Pastikan salju berada di bawah elemen lain
+        height: "100vh",
       }}
     />
   );
