@@ -4,7 +4,11 @@ const Closing = () => {
   return (
     <>
       <div
-        className="closing"
+        className="closing-container"
+        style={{
+          position: "relative",
+          height: "100vh",
+        }}
         // style={{
         //   justifyContent: "center",
         //   alignItems: "center",
