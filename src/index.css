@@ -189,14 +189,60 @@ body {
   background-position: center;
 }
 .closing {
-  background-image: url("/gambar/bg-closing.png");
+  /* background-image: url("/gambar/bg-closing.png"); */
+  background-color: black;
   background-size: cover;
   background-position: center;
-  position: relative;
+  height: 100vh;
 }
 
 .comment-input {
   border-bottom: 1px solid #ccc;
   padding: 1rem;
   background-color: #f9f9f9;
+}
+.snnow,
+.snnow::after,
+.snnow::before {
+  content: "";
+  position: absolute;
+  top: -650px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: radial-gradient(6px 6px at 100px 50px, #fff, transparent),
+    radial-gradient(8px 8px at 200px 150px, #fff, transparent),
+    radial-gradient(5px 5px at 300px 250px, #fff, transparent),
+    radial-gradient(6px 6px at 400px 350px, #fff, transparent),
+    radial-gradient(8px 8px at 500px 100px, #fff, transparent),
+    radial-gradient(5px 5px at 50px 200px, #fff, transparent),
+    radial-gradient(6px 6px at 150px 300px, #fff, transparent),
+    radial-gradient(8px 8px at 250px 400px, #fff, transparent),
+    radial-gradient(5px 5px at 350px 500px, #fff, transparent);
+  background-size: 650px 650px;
+
+  animation: snowAnim 3s linear;
+  animation-iteration-count: infinite;
+}
+.snnow::after {
+  margin-left: -250px;
+  opacity: 0.5;
+  filter: blur(1px);
+  animation-direction: reverse;
+  animation-duration: 6s;
+}
+.snnow::before {
+  margin-left: -350px;
+  opacity: 0.7;
+  filter: blur(2px);
+  animation-direction: reverse;
+  animation-duration: 9s;
+}
+@keyframes snowAnim {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(650px);
+  }
 }
