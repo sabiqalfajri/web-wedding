@@ -4,24 +4,19 @@ const Closing = () => {
   return (
     <>
       <div
-        className="closing-container"
+        className="closing"
         style={{
-          position: "relative",
-          height: "100vh",
+          justifyContent: "center",
+          alignItems: "center",
+          textAlign: "center",
+          display: "flex",
+          flexDirection: "column",
+          width: "100%",
+          display: "flex",
+          boxSizing: "border-box",
         }}
-        // style={{
-        //   justifyContent: "center",
-        //   alignItems: "center",
-        //   textAlign: "center",
-        //   display: "flex",
-        //   flexDirection: "column",
-        //   width: "100%",
-        //   display: "flex",
-        //   boxSizing: "border-box",
-        // }}
       >
-        <Effect />
-        {/* <img
+        <img
           src="/gambar/border-slideterakhir.png"
           alt=""
           style={{
@@ -63,7 +58,7 @@ const Closing = () => {
           >
             Mail & Asih
           </strong>
-        </div> */}
+        </div>
       </div>
     </>
   );

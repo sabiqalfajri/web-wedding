@@ -70,6 +70,9 @@ const Effect = () => {
       style={{
         width: "100%",
         zIndex: "1",
+        top: "0",
+        position: "absolute",
+        left: "0",
       }}
     />
   );
