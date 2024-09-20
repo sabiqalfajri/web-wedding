@@ -14,7 +14,7 @@ const Closing = () => {
         className="image-container"
         style={{
           scale: scrollYProgress, // Gunakan scrollYProgress langsung
-          opacity: scrollYProgress,
+          opacity: 1 - scrollYProgress,
           originX: 0.5,
           originY: 0.5,
         }}
