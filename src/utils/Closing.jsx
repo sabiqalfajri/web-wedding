@@ -1,62 +1,33 @@
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import React, { useRef } from "react";
+import { motion, useScroll } from "framer-motion";
 
 const Closing = () => {
-  const [scrollY, setScrollY] = useState(0);
-  const [zoom, setZoom] = useState(1);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      setScrollY(currentScrollY);
-
-      // Adjust zoom based on scroll position
-      const scaleValue = 1 + currentScrollY / window.innerHeight; // Adjusts zoom based on viewport height
-      setZoom(scaleValue); // Continue zooming based on scroll
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "1 0"], // Mengatur offset untuk zoom
+  });
 
   return (
-    <div>
-      {/* Section 1 with Zoom Effect */}
+    <div className="wrapper" ref={ref}>
       <motion.div
-        className="section"
+        className="image-container"
         style={{
-          height: "100vh",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-        animate={{
-          scale: zoom, // Zoom based on scroll
-        }}
-        transition={{
-          type: "spring",
-          stiffness: 400,
-          damping: 40,
+          scale: scrollYProgress.to([0, 1], [1, 2]), // Zoom hingga memenuhi layar
+          opacity: scrollYProgress.to([0, 1], [1, 0]), // Opacity dari 1 ke 0
+          originX: 0.5,
+          originY: 0.5,
         }}
       >
-        <h1 style={{ fontSize: "4rem" }}>Zoom Effect</h1>
+        <img
+          src="/gambar/border-slideterakhir.png" // Ganti dengan URL gambar Anda
+          alt="Zoom"
+          className="zoom-image"
+        />
       </motion.div>
-
-      {/* Section 2 - Transition to next section */}
-      <div
-        className="section"
-        style={{
-          height: "100vh",
-          backgroundColor: "#f4f4f4",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <h1 style={{ fontSize: "4rem" }}>Next Section</h1>
-      </div>
+      <section className="content">
+        <div className="text">Haloo brow</div>
+      </section>
     </div>
   );
 };
