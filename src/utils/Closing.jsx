@@ -1,45 +1,28 @@
-import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import _ScrollTrigger, { ScrollTrigger } from "gsap/ScrollTrigger";
-
-// Registrasi ScrollTrigger ke dalam GSAP
-gsap.registerPlugin(ScrollTrigger);
+import React from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const Closing = () => {
-  const imageRef = useRef(null);
+  const { scrollY } = useScroll();
 
-  useEffect(() => {
-    const image = imageRef.current;
-
-    // Animasi Zoom
-    gsap.fromTo(
-      ".image-container img",
-      { scale: 1 }, // Awalnya gambar memiliki ukuran normal
-      {
-        scale: 3, // Zoom
-        ease: "power1.inOut",
-        scrollTrigger: {
-          trigger: ".image-container",
-          start: "top bottom", // Mulai animasi saat bagian atas gambar mencapai tengah layar
-          end: "top top+=300", // Akhir animasi saat bawah gambar mencapai tengah layar
-          scrub: true, // Animasi mengikuti scroll
-          invalidateOnRefresh: true,
-          markers: true,
-        },
-      }
-    );
-    ScrollTrigger.refresh();
-  }, []);
+  // Mengatur transformasi skala berdasarkan scroll
+  const scale = useTransform(scrollY, [0, 300], [1, 3]); // Ubah range sesuai kebutuhan
 
   return (
     <div className="wrapper">
-      <div className="image-container" ref={imageRef}>
+      <motion.div
+        className="image-container"
+        style={{
+          scale, // Terapkan skala pada kontainer gambar
+          originX: 0.5, // Titik asal zoom di tengah
+          originY: 0.5, // Titik asal zoom di tengah
+        }}
+      >
         <img
           src="https://via.placeholder.com/800x600" // Ganti dengan URL gambar Anda
           alt="Zoom"
           className="zoom-image"
         />
-      </div>
+      </motion.div>
       <section className="content">
         <div className="text">Haloo brow</div>
       </section>
