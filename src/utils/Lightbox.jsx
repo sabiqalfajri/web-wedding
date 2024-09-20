@@ -1,7 +1,6 @@
-import Lightbox from "react-image-lightbox";
+import { Lightbox } from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 import React from "react";
-import "react-image-lightbox/style.css";
-
 const LightboxLogic = ({
   images,
   photoIndex,
@@ -9,6 +8,7 @@ const LightboxLogic = ({
   open,
   setOpen,
 }) => {
+  const slides = images.map((image) => ({ src: image.src }));
   if (typeof global === "undefined") {
     window.global = window;
   }
@@ -16,16 +16,13 @@ const LightboxLogic = ({
     <>
       {open && (
         <Lightbox
-          mainSrc={images[photoIndex].src}
-          nextSrc={images[(photoIndex + 1) % images.length].src}
-          prevSrc={images[(photoIndex + images.length - 1) % images.length].src}
-          onCloseRequest={() => setOpen(false)}
-          onMoveRequest={() =>
-            setPhotoIndex((photoIndex + images.length - 1) % images.length)
-          }
-          onMoveNextRequest={() =>
-            setPhotoIndex((photoIndex + 1) % images.length)
-          }
+          open={open}
+          close={() => setOpen(false)}
+          slides={slides}
+          index={photoIndex}
+          on={{
+            view: ({ index }) => setPhotoIndex(index),
+          }}
         />
       )}
     </>

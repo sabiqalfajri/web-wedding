@@ -14,6 +14,9 @@ importers:
       '@hyvor/hyvor-talk-react':
         specifier: ^1.0.1
         version: 1.0.1(react@18.3.1)
+      '@icetee/react-image-lightbox':
+        specifier: ^5.1.4
+        version: 5.1.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@layankumarasinghe/react-snow-effect':
         specifier: ^1.0.2
         version: 1.0.2
@@ -50,9 +53,6 @@ importers:
       react-icons:
         specifier: ^5.3.0
         version: 5.3.0(react@18.3.1)
-      react-image-lightbox:
-        specifier: ^5.1.4
-        version: 5.1.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-intersection-observer:
         specifier: ^9.13.1
         version: 9.13.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -392,6 +392,12 @@ packages:
     resolution: {integrity: sha512-EVjnle6A9DFRHwGwyaf9pW2L6qrE6KjQbDAKoLJoI08Mrqxt8iHNnrpPDWKTTWa29ZqqUp12KNfdC4jd2/T+iw==}
     peerDependencies:
       react: ^16.0.0 || ^17.0.0 || ^18.0.0
+
+  '@icetee/react-image-lightbox@5.1.4':
+    resolution: {integrity: sha512-cjHoiCKcypGKLEfcVxVZtrSw8g2nNzbBw1JIcgdcWh9A7cjGxd4U2CDeGRu3A0Uxlh9g9UscdyDsTCGN2SPNpg==}
+    peerDependencies:
+      react: 16.x || 17.x || 18.x || 19.x
+      react-dom: 16.x || 17.x || 18.x || 19.x
 
   '@jridgewell/gen-mapping@0.3.5':
     resolution: {integrity: sha512-IzL8ZoEDIBRWEzlCcRhOaCupYyN5gdIK+Q6fbFdPDg6HqX6jpkItn7DFIpW9LQzXG6Df9sA7+OKnq0qlz/GaQg==}
@@ -1430,13 +1436,6 @@ packages:
     peerDependencies:
       react: '*'
 
-  react-image-lightbox@5.1.4:
-    resolution: {integrity: sha512-kTiAODz091bgT7SlWNHab0LSMZAPJtlNWDGKv7pLlLY1krmf7FuG1zxE0wyPpeA8gPdwfr3cu6sPwZRqWsc3Eg==}
-    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
-    peerDependencies:
-      react: 16.x || 17.x
-      react-dom: 16.x || 17.x
-
   react-intersection-observer@9.13.1:
     resolution: {integrity: sha512-tSzDaTy0qwNPLJHg8XZhlyHTgGW6drFKTtvjdL+p6um12rcnp8Z5XstE+QNBJ7c64n5o0Lj4ilUleA41bmDoMw==}
     peerDependencies:
@@ -2000,6 +1999,13 @@ snapshots:
     dependencies:
       '@hyvor/hyvor-talk-base': 1.0.1
       react: 18.3.1
+
+  '@icetee/react-image-lightbox@5.1.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      prop-types: 15.8.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      react-modal: 3.16.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
   '@jridgewell/gen-mapping@0.3.5':
     dependencies:
@@ -3222,13 +3228,6 @@ snapshots:
   react-icons@5.3.0(react@18.3.1):
     dependencies:
       react: 18.3.1
-
-  react-image-lightbox@5.1.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
-    dependencies:
-      prop-types: 15.8.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      react-modal: 3.16.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
   react-intersection-observer@9.13.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
