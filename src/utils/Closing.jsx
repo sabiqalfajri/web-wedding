@@ -13,13 +13,13 @@ const Closing = () => {
 
     // Animasi Zoom
     gsap.fromTo(
-      image,
-      { scale: 0.1 }, // Awalnya gambar memiliki ukuran normal
+      ".image-container img",
+      { scale: 1 }, // Awalnya gambar memiliki ukuran normal
       {
         scale: 3, // Zoom
         ease: "power1.inOut",
         scrollTrigger: {
-          trigger: image,
+          trigger: ".image-container",
           start: "top center", // Mulai animasi saat bagian atas gambar mencapai tengah layar
           end: "bottom top", // Akhir animasi saat bawah gambar mencapai tengah layar
           scrub: true, // Animasi mengikuti scroll
