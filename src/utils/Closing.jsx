@@ -20,7 +20,7 @@ const Closing = () => {
         }}
       >
         <img
-          src="https://via.placeholder.com/800x600" // Ganti dengan URL gambar Anda
+          src="/gambar/border-slideterakhir.png" // Ganti dengan URL gambar Anda
           alt="Zoom"
           className="zoom-image"
         />
