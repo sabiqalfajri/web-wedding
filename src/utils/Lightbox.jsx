@@ -9,7 +9,6 @@ const LightboxLogic = ({
   open,
   setOpen,
 }) => {
-  console.log("Lightbox Logic Props:", { images, photoIndex, open });
   if (typeof global === "undefined") {
     window.global = window;
   }
