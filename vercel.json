@@ -9,9 +9,7 @@
       "destination": "/index.html"
     }
   ],
-  "build": {
-    "env": {
-      "NODE_OPTIONS": "--legacy-peer-deps"
-    }
+  "scripts": {
+    "build": "npm install --legacy-peer-deps && next build"
   }
 }
