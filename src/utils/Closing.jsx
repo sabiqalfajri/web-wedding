@@ -18,12 +18,13 @@ const Closing = () => {
       image,
       { scale: 1 }, // Awalnya gambar memiliki ukuran normal
       {
-        scale: window.innerWidth < 768 ? 3 : 2, // Zoom
+        scale: 100, // Zoom
         scrollTrigger: {
           trigger: image,
           start: "top center", // Mulai animasi saat bagian atas gambar mencapai tengah layar
           end: "bottom center", // Akhir animasi saat bawah gambar mencapai tengah layar
           scrub: true, // Animasi mengikuti scroll
+          invalidateOnRefresh: true,
         },
       }
     );
@@ -39,6 +40,7 @@ const Closing = () => {
           trigger: content,
           start: "top bottom", // Mulai saat bagian atas konten mencapai bawah layar
           scrub: true,
+          invalidateOnRefresh: true,
         },
       }
     );
