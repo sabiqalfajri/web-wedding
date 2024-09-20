@@ -256,11 +256,7 @@ body {
 
 .image-container {
   height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
+  position: relative;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -268,20 +264,18 @@ body {
   overflow: hidden;
 }
 .image-container img {
-  width: 30%;
+  width: 80%;
   height: auto;
   object-fit: cover;
   border-radius: 50%;
 }
 .content {
   position: relative;
-  top: 100vh;
   height: 100vh;
   background-color: #f8f8f8;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2;
 }
 .text {
   font-size: 2rem;

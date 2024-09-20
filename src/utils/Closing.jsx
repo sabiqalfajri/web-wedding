@@ -1,20 +1,22 @@
-import React from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import React, { useRef } from "react";
+import { motion, useScroll } from "framer-motion";
 
 const Closing = () => {
-  const { scrollY } = useScroll();
-
-  // Mengatur transformasi skala berdasarkan scroll
-  const scale = useTransform(scrollY, [0, 300], [1, 3]); // Ubah range sesuai kebutuhan
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "1 0"], // Mengatur offset untuk zoom
+  });
 
   return (
-    <div className="wrapper">
+    <div className="wrapper" ref={ref}>
       <motion.div
         className="image-container"
         style={{
-          scale, // Terapkan skala pada kontainer gambar
-          originX: 0.5, // Titik asal zoom di tengah
-          originY: 0.5, // Titik asal zoom di tengah
+          scale: scrollYProgress, // Gunakan scrollYProgress langsung
+          opacity: scrollYProgress,
+          originX: 0.5,
+          originY: 0.5,
         }}
       >
         <img
