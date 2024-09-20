@@ -26,6 +26,7 @@ const Galery = () => {
           backgroundImage: `url(${src})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
+          height: "100vh",
         }}
       >
         <div

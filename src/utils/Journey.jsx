@@ -10,6 +10,7 @@ const Journey = () => {
           backgroundImage: `url(${src})`,
           backgroundPosition: "center",
           backgroundSize: "cover",
+          height: "100vh",
         }}
       >
         <div

@@ -27,6 +27,7 @@ const Alamat = () => {
           backgroundImage: `url(${src})`,
           paddingBottom: "3rem",
           paddingTop: "1rem",
+          height: "100vh",
         }}
       >
         <div>

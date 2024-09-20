@@ -281,6 +281,7 @@ const Home = () => {
               backgroundSize: "cover",
               backgroundPosition: "center",
               width: "100%",
+              height: "100vh",
             }}
             className="parallax"
           ></div>
