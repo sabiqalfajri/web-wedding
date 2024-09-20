@@ -7,11 +7,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Closing = () => {
   const imageRef = useRef(null);
-  const contentRef = useRef(null);
 
   useEffect(() => {
     const image = imageRef.current;
-    const content = contentRef.current;
 
     // Animasi Zoom
     gsap.fromTo(
@@ -19,50 +17,30 @@ const Closing = () => {
       { scale: 1 }, // Awalnya gambar memiliki ukuran normal
       {
         scale: 3, // Zoom
+        ease: "power1.inOut",
         scrollTrigger: {
           trigger: image,
           start: "top center", // Mulai animasi saat bagian atas gambar mencapai tengah layar
-          end: "bottom center", // Akhir animasi saat bawah gambar mencapai tengah layar
+          end: "bottom top", // Akhir animasi saat bawah gambar mencapai tengah layar
           scrub: true, // Animasi mengikuti scroll
           invalidateOnRefresh: true,
-        },
-      }
-    );
-
-    // Scroll to Content
-    gsap.fromTo(
-      content,
-      { opacity: 0, y: 50 }, // Konten mulai dengan opacity 0 dan turun 50px
-      {
-        opacity: 1,
-        y: 0,
-        scrollTrigger: {
-          trigger: content,
-          start: "top bottom", // Mulai saat bagian atas konten mencapai bawah layar
-          scrub: true,
-          invalidateOnRefresh: true,
+          markers: true,
         },
       }
     );
   }, []);
 
   return (
-    <div className="content">
-      <section className="image-container">
+    <div className="wrapper">
+      <div className="image-container" ref={imageRef}>
         <img
-          ref={imageRef}
           src="https://via.placeholder.com/800x600" // Ganti dengan URL gambar Anda
           alt="Zoom"
           className="zoom-image"
         />
-        <div className="circle-overlay"></div>
-      </section>
-
-      <section className="content-section" ref={contentRef}>
-        <div className="text-content">
-          <h1>Welcome to the Content Section</h1>
-          <p>This is the content after the zoomed image animation.</p>
-        </div>
+      </div>
+      <section className="content">
+        <div className="text">Haloo brow</div>
       </section>
     </div>
   );
