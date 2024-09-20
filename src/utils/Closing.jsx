@@ -1,6 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Closing = () => {
+  useEffect(() => {
+    // Memuat script snowfall dari public folder
+    const script = document.createElement("script");
+    script.src = "/snowfall.min.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    // Menjalankan efek snowfall setelah script dimuat
+    script.onload = () => {
+      window.snowFall.snow(document.body, {
+        flakeCount: 120,
+        maxSpeed: 5,
+        minSize: 2,
+        maxSize: 5,
+        zIndex: 0,
+      });
+    };
+    return () => {
+      const snowflakes = document.querySelectorAll(".snowfall-flakes");
+      snowflakes.forEach((flake) => flake.remove());
+      document.body.removeChild(script);
+    };
+  }, []);
   const src = "/gambar/sliderpenutup.png";
   return (
     <>

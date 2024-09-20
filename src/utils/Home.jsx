@@ -11,7 +11,8 @@ import Surat from "./Surat";
 import Coment from "./Comment";
 import { motion } from "framer-motion";
 import Galery from "./Galery";
-import SnowfallEffect from "./Config";
+// import SnowfallEffect from "./Config";
+import Closing from "./Closing";
 
 const Home = () => {
   // gambar
@@ -291,7 +292,7 @@ const Home = () => {
             <Alamat />
             <Gift />
             <Confirm />
-            <SnowfallEffect />
+            <Closing />
             <Coment />
           </div>
         </div>
