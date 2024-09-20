@@ -14,7 +14,7 @@ const Closing = () => {
     // Animasi Zoom
     gsap.fromTo(
       image,
-      { scale: 1 }, // Awalnya gambar memiliki ukuran normal
+      { scale: 0.1 }, // Awalnya gambar memiliki ukuran normal
       {
         scale: 3, // Zoom
         ease: "power1.inOut",
