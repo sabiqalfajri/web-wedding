@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import _ScrollTrigger, { ScrollTrigger } from "gsap/ScrollTrigger";
 
 // Registrasi ScrollTrigger ke dalam GSAP
 gsap.registerPlugin(ScrollTrigger);
@@ -28,6 +28,7 @@ const Closing = () => {
         },
       }
     );
+    ScrollTrigger.refresh();
   }, []);
 
   return (

@@ -89,7 +89,6 @@ const Home = () => {
           behavior: "smooth",
         });
       }
-      ScrollTrigger.refresh();
     }, 0);
   };
 
