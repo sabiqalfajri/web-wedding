@@ -18,7 +18,7 @@ const Closing = () => {
       image,
       { scale: 1 }, // Awalnya gambar memiliki ukuran normal
       {
-        scale: 100, // Zoom
+        scale: 3, // Zoom
         scrollTrigger: {
           trigger: image,
           start: "top center", // Mulai animasi saat bagian atas gambar mencapai tengah layar
