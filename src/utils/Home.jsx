@@ -13,6 +13,7 @@ import { motion } from "framer-motion";
 import Galery from "./Galery";
 // import SnowfallEffect from "./Config";
 import Closing from "./Closing";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Home = () => {
   // gambar
@@ -88,6 +89,7 @@ const Home = () => {
           behavior: "smooth",
         });
       }
+      ScrollTrigger.refresh();
     }, 0);
   };
 
