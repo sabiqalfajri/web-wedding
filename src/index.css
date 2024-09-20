@@ -291,7 +291,7 @@ body {
 /* Gaya untuk container gambar */
 .image-container {
   position: relative;
-  height: 100vh; /* Membuat gambar memenuhi tinggi layar */
+  height: 200vh; /* Membuat gambar memenuhi tinggi layar */
   display: flex;
   justify-content: center;
   align-items: center;
