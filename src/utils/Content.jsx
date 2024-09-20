@@ -16,7 +16,6 @@ const Content = ({ show, handleShow }) => {
           backgroundSize: "cover",
           backgroundPosition: "center",
           position: "relative",
-          height: "100vh",
         }}
       >
         <motion.img

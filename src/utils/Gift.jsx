@@ -37,7 +37,7 @@ const Gift = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         width: "100%",
-        height: "100vh",
+        height: "auto",
         backgroundImage: `url(${src})`,
       }}
     >
