@@ -122,7 +122,7 @@ const Home = () => {
           }}
         >
           <h5
-            className="mb-2"
+            className="mb-2 home"
             style={{
               fontSize: "1rem",
             }}

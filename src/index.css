@@ -3,6 +3,7 @@
 body::-webkit-scrollbar {
   display: none;
 }
+
 .audio-icon-wrapper {
   animation: rotating 4s linear infinite;
   transform-origin: center;

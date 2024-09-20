@@ -1,6 +1,23 @@
 import React, { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Closing = () => {
+  useEffect(() => {
+    gsap.to("#parent #gambar", {
+      scale: 200,
+      duration: 2,
+      stagger: 0.25,
+      scrollTrigger: {
+        trigger: "#parent",
+        pin: true,
+        end: `+=${window.innerHeight * 1.5}`,
+        scrub: 3,
+      },
+    });
+  }, []);
   useEffect(() => {
     // Memuat script snowfall dari public folder
     const script = document.createElement("script");
@@ -29,6 +46,7 @@ const Closing = () => {
     <>
       <div
         className="closing"
+        id="parent"
         style={{
           position: "relative",
           display: "flex",
@@ -41,10 +59,11 @@ const Closing = () => {
         }}
       >
         <img
+          id="gambar"
           src="/gambar/border-slideterakhir.png"
           alt=""
           style={{
-            maxWidth: "25rem",
+            maxWidth: "75%",
             height: "auto",
             zIndex: 3,
           }}
