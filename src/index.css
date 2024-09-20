@@ -255,7 +255,6 @@ body {
 }
 
 .image-container {
-  height: 100vh;
   position: relative;
   justify-content: center;
   overflow: hidden;
