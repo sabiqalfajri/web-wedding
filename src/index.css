@@ -260,6 +260,7 @@ body {
   overflow: hidden;
   display: flex;
   overflow: hidden;
+  bottom: 100vh;
 }
 .image-container img {
   width: 100%;
