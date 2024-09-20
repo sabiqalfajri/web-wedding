@@ -20,8 +20,8 @@ const Closing = () => {
         ease: "power1.inOut",
         scrollTrigger: {
           trigger: ".image-container",
-          start: "top center", // Mulai animasi saat bagian atas gambar mencapai tengah layar
-          end: "bottom top", // Akhir animasi saat bawah gambar mencapai tengah layar
+          start: "top top+=50", // Mulai animasi saat bagian atas gambar mencapai tengah layar
+          end: "bottom bottom-=100", // Akhir animasi saat bawah gambar mencapai tengah layar
           scrub: true, // Animasi mengikuti scroll
           invalidateOnRefresh: true,
           markers: true,
