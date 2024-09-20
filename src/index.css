@@ -178,7 +178,6 @@ body {
   width: 100%;
   transition: transform 0.2s ease-out;
   overflow: hidden;
-  will-change: transform; /* Performa */
 }
 .timeline-image {
   background-image: url("/gambar/couple4.jpg");
