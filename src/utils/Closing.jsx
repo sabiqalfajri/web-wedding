@@ -1,34 +1,19 @@
 import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import _ScrollTrigger, { ScrollTrigger } from "gsap/ScrollTrigger";
-
-// Registrasi ScrollTrigger ke dalam GSAP
-gsap.registerPlugin(ScrollTrigger);
+import ScrollReveal from "scrollreveal";
 
 const Closing = () => {
   const imageRef = useRef(null);
 
   useEffect(() => {
-    const image = imageRef.current;
-
-    // Animasi Zoom
-    gsap.fromTo(
-      ".image-container img",
-      { scale: 1 }, // Awalnya gambar memiliki ukuran normal
-      {
-        scale: 3, // Zoom
-        ease: "power1.inOut",
-        scrollTrigger: {
-          trigger: ".image-container",
-          start: "top center", // Mulai animasi saat bagian atas gambar mencapai tengah layar
-          end: "bottom top", // Akhir animasi saat bawah gambar mencapai tengah layar
-          scrub: true, // Animasi mengikuti scroll
-          invalidateOnRefresh: true,
-          markers: true,
-        },
-      }
-    );
-    ScrollTrigger.refresh();
+    // Inisialisasi ScrollReveal untuk zoom
+    ScrollReveal().reveal(".zoom-image", {
+      scale: 3, // Mulai dengan zoom 3x
+      duration: 1000, // Durasi animasi 1 detik
+      easing: "ease-in-out", // Animasi smooth
+      distance: "0", // Tidak ada pergerakan dari arah tertentu, hanya scale
+      opacity: 0.8, // Mulai dari opacity rendah jika diperlukan
+      reset: false, // Hanya animasi satu kali, tidak diulang
+    });
   }, []);
 
   return (

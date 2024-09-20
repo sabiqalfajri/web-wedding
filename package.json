@@ -29,6 +29,7 @@
     "react-router-dom": "^6.26.2",
     "react-snowfall": "^2.1.1",
     "react-tsparticles": "^2.12.2",
+    "scrollreveal": "^4.0.9",
     "snowfall": "^2.1.0",
     "swiper": "^11.1.14",
     "tsparticles": "^3.5.0",

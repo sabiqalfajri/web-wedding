@@ -272,6 +272,7 @@ body {
   height: auto;
   object-fit: cover;
   border-radius: 50%;
+  transition: transform 1s ease-in-out;
 }
 .content {
   position: relative;
