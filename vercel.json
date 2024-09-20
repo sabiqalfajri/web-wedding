@@ -8,8 +8,5 @@
       "source": "/(.*)",
       "destination": "/index.html"
     }
-  ],
-  "scripts": {
-    "build": "npm install --legacy-peer-deps && next build"
-  }
+  ]
 }
