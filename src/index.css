@@ -256,15 +256,15 @@ body {
 
 .image-container {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
   transform: translate(-50%, -50%);
   width: 100vw; /* Memastikan lebar memenuhi layar */
   height: 100vh; /* Memastikan tinggi memenuhi layar */
 }
 
 .zoom-image {
-  width: 80%; /* Atur sesuai kebutuhan */
+  width: 100%; /* Atur sesuai kebutuhan */
   height: 100%; /* Pastikan gambar memenuhi kontainer */
   object-fit: cover; /* Memastikan gambar mengisi kontainer dengan baik */
 }

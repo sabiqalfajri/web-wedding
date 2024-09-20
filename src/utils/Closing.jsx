@@ -13,8 +13,8 @@ const Closing = () => {
       <motion.div
         className="image-container"
         style={{
-          scale: scrollYProgress.to([0, 1], [1, 2]), // Zoom hingga memenuhi layar
-          opacity: scrollYProgress.to([0, 1], [1, 0]), // Opacity dari 1 ke 0
+          scale: scrollYProgress, // Zoom hingga memenuhi layar (2x)
+          opacity: 1 - scrollYProgress, // Opacity dari 1 ke 0
           originX: 0.5,
           originY: 0.5,
         }}
@@ -25,9 +25,9 @@ const Closing = () => {
           className="zoom-image"
         />
       </motion.div>
-      <section className="content">
+      {/* <section className="content">
         <div className="text">Haloo brow</div>
-      </section>
+      </section> */}
     </div>
   );
 };
