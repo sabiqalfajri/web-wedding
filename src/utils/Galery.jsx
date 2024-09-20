@@ -4,9 +4,20 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import React from "react";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import LightboxLogic from "./Lightbox";
 
 const Galery = () => {
+  const images = [
+    { src: "/gambar/couple1.jpg" },
+    { src: "/gambar/couple2.jpg" },
+    { src: "/gambar/couple3.jpg" },
+    { src: "/gambar/couple6.jpg" },
+    { src: "/gambar/couple7.jpg" },
+  ];
   const src = "/gambar/Galerry.png";
+  const [photoIndex, setPhotoIndex] = useState(0);
+  const [open, setOpen] = useState(false);
 
   return (
     <>
@@ -44,20 +55,22 @@ const Galery = () => {
               y: { type: "spring", stiffness: 60 },
               scale: { type: "spring", stiffness: 60 },
             }}
+            onClick={() => {
+              setPhotoIndex(0);
+              setOpen(true);
+            }}
           >
-            <a href="/gambar/couple1.jpg">
-              <img
-                src="/gambar/couple1.jpg"
-                alt=""
-                style={{
-                  maxWidth: "250px",
-                  width: "100%",
-                  maxHeight: "200px",
-                  objectFit: "cover",
-                  paddingRight: "1rem",
-                }}
-              />
-            </a>
+            <img
+              src={images[0]?.src}
+              alt=""
+              style={{
+                maxWidth: "250px",
+                width: "100%",
+                maxHeight: "200px",
+                objectFit: "cover",
+                paddingRight: "1rem",
+              }}
+            />
           </motion.div>
           <motion.div
             className="image image-2"
@@ -69,19 +82,25 @@ const Galery = () => {
               y: { type: "spring", stiffness: 60 },
               scale: { type: "spring", stiffness: 60 },
             }}
+            onClick={() => {
+              setPhotoIndex(1);
+              setOpen(true);
+            }}
           >
-            <a href="/gambar/couple2.jpg">
-              <img
-                src="/gambar/couple2.jpg"
-                alt=""
-                style={{
-                  maxWidth: "250px",
-                  width: "100%",
-                  objectFit: "cover",
-                  paddingLeft: "1rem",
-                }}
-              />
-            </a>
+            <img
+              src={images[1]?.src}
+              onClick={() => {
+                setPhotoIndex(index);
+                setOpen(true);
+              }}
+              alt=""
+              style={{
+                maxWidth: "250px",
+                width: "100%",
+                objectFit: "cover",
+                paddingLeft: "1rem",
+              }}
+            />
           </motion.div>
           <motion.div
             className="image image-3"
@@ -98,23 +117,25 @@ const Galery = () => {
               x: { type: "spring", stiffness: 60 },
               scale: { type: "spring", stiffness: 60 },
             }}
+            onClick={() => {
+              setPhotoIndex(2);
+              setOpen(true);
+            }}
           >
-            <a href="/gambar/couple7.jpg">
-              <img
-                src="/gambar/couple7.jpg"
-                alt=""
-                style={{
-                  maxWidth: "9rem",
-                  width: "100%",
-                  maxHeight: "150px",
-                  height: "100%",
-                  objectFit: "cover",
-                  position: "absolute",
-                  top: "140%",
-                  left: "65%",
-                }}
-              />
-            </a>
+            <img
+              src={images[2]?.src}
+              alt=""
+              style={{
+                maxWidth: "9rem",
+                width: "100%",
+                maxHeight: "150px",
+                height: "100%",
+                objectFit: "cover",
+                position: "absolute",
+                top: "140%",
+                left: "65%",
+              }}
+            />
           </motion.div>
           <motion.div
             className="image image-4"
@@ -131,23 +152,25 @@ const Galery = () => {
               x: { type: "spring", stiffness: 60 },
               scale: { type: "spring", stiffness: 60 },
             }}
+            onClick={() => {
+              setPhotoIndex(3);
+              setOpen(true);
+            }}
           >
-            <a href="/gambar/couple6.jpg">
-              <img
-                src="/gambar/couple6.jpg"
-                alt=""
-                style={{
-                  maxWidth: "8rem",
-                  width: "100%",
-                  maxHeight: "150px",
-                  height: "100%",
-                  objectFit: "cover",
-                  position: "absolute",
-                  top: "240%",
-                  right: "70%",
-                }}
-              />
-            </a>
+            <img
+              src={images[3]?.src}
+              alt=""
+              style={{
+                maxWidth: "8rem",
+                width: "100%",
+                maxHeight: "150px",
+                height: "100%",
+                objectFit: "cover",
+                position: "absolute",
+                top: "240%",
+                right: "70%",
+              }}
+            />
           </motion.div>
           <div
             style={{
@@ -183,22 +206,24 @@ const Galery = () => {
               y: { type: "spring", stiffness: 60 },
               scale: { type: "spring", stiffness: 60 },
             }}
+            onClick={() => {
+              setPhotoIndex(1);
+              setOpen(true);
+            }}
           >
-            <a href="/gambar/couple2.jpg">
-              <img
-                src="/gambar/couple2.jpg"
-                alt=""
-                style={{
-                  maxWidth: "auto",
-                  maxHeight: "200px",
-                  height: "100%",
-                  width: "100%",
-                  objectFit: "cover",
-                  marginTop: "2rem",
-                  marginRight: "2rem",
-                }}
-              />
-            </a>
+            <img
+              src={images[1]?.src}
+              alt=""
+              style={{
+                maxWidth: "auto",
+                maxHeight: "200px",
+                height: "100%",
+                width: "100%",
+                objectFit: "cover",
+                marginTop: "2rem",
+                marginRight: "2rem",
+              }}
+            />
           </motion.div>
           <motion.div
             className="image image-6"
@@ -213,23 +238,33 @@ const Galery = () => {
               y: { type: "spring", stiffness: 60 },
               scale: { type: "spring", stiffness: 60 },
             }}
+            onClick={() => {
+              setPhotoIndex(4);
+              setOpen(true);
+            }}
           >
-            <a href="/gambar/couple3.jpg">
-              <img
-                src="/gambar/couple3.jpg"
-                alt=""
-                style={{
-                  maxHeight: "150px",
-                  height: "100%",
-                  maxWidth: "250px",
-                  width: "100%",
-                  marginTop: "5rem",
-                  objectFit: "cover",
-                }}
-              />
-            </a>
+            <img
+              src={images[4]?.src}
+              alt=""
+              style={{
+                maxHeight: "150px",
+                height: "100%",
+                maxWidth: "250px",
+                width: "100%",
+                marginTop: "5rem",
+                objectFit: "cover",
+              }}
+            />
           </motion.div>
         </div>
+        {/* komponen lightbox */}
+        <LightboxLogic
+          images={images}
+          photoIndex={photoIndex}
+          setPhotoIndex={setPhotoIndex}
+          open={open}
+          setOpen={setOpen}
+        />
       </div>
     </>
   );

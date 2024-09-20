@@ -17,11 +17,20 @@ const SnowfallEffect = () => {
       console.log("snowfall tidak ditemukan");
     }
   }, []);
+  const src = "/gambar/sliderpenutup.png";
 
   return (
     <div
       className="container"
-      style={{ position: "relative", height: "100vh", zIndex: 2 }}
+      style={{
+        position: "relative",
+        height: "100vh",
+        zIndex: 1,
+        backgroundImage: `url(${src})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
     >
       <Closing />
     </div>

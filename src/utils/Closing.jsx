@@ -1,6 +1,7 @@
 import React from "react";
 
 const Closing = () => {
+  const src = "/gambar/sliderpenutup.png";
   return (
     <>
       <div
@@ -22,7 +23,7 @@ const Closing = () => {
           style={{
             maxWidth: "25rem",
             height: "auto",
-            zIndex: 1,
+            zIndex: 3,
           }}
         />
         <div
