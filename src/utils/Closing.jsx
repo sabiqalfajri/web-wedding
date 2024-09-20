@@ -13,22 +13,22 @@ const Closing = () => {
 
     // Animasi Zoom
     gsap.fromTo(
-      image,
+      ".image-container img",
       { scale: 1 }, // Awalnya gambar memiliki ukuran normal
       {
         scale: 3, // Zoom
         ease: "power1.inOut",
         scrollTrigger: {
-          trigger: image,
-          start: "top 80%", // Mulai animasi saat bagian atas gambar mencapai tengah layar
-          end: "bottom 20%", // Akhir animasi saat bawah gambar mencapai tengah layar
+          trigger: ".image-container",
+          start: "top top+=50", // Mulai animasi saat bagian atas gambar mencapai tengah layar
+          end: "bottom bottom-=100", // Akhir animasi saat bawah gambar mencapai tengah layar
           scrub: true, // Animasi mengikuti scroll
           invalidateOnRefresh: true,
+          onRefresh: () => ScrollTrigger.refresh(),
           markers: true,
         },
       }
     );
-    ScrollTrigger.refresh();
   }, []);
 
   return (

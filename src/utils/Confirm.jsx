@@ -34,7 +34,6 @@ const Confirm = () => {
           backgroundSize: "cover",
           paddingBottom: "2rem",
           backgroundRepeat: "no-repeat",
-          height: "100vh",
         }}
       >
         <h1
