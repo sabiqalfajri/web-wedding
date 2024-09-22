@@ -82,9 +82,7 @@ const Journey = () => {
                 >
                   <div className="timeline-heading">
                     <h4>Bertemu</h4>
-                    <strong style={{ marginTop: "1rem" }}>
-                      5 Agustus 2019
-                    </strong>
+                    <strong style={{ marginTop: "1rem" }}>April 2023</strong>
                   </div>
                   <div
                     className="timeline-body"
@@ -134,9 +132,7 @@ const Journey = () => {
                 >
                   <div className="timeline-heading">
                     <h4>Tunangan</h4>
-                    <strong style={{ marginTop: "1rem" }}>
-                      10 November 2022
-                    </strong>
+                    <strong style={{ marginTop: "1rem" }}>Januari 2024</strong>
                   </div>
                   <div
                     className="timeline-body"
