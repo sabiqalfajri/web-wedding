@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 const Alamat = () => {
   const handleClick = () => {
     // URL ke lokasi di Google Maps
-    window.open("https://maps.app.goo.gl/1cFnQVNc2txyh72a8", "_blank");
+    window.open("https://maps.app.goo.gl/73iwLLPMTJBXb5qS6", "_blank");
   };
   const src = "/gambar/backgroundAlamat.png";
   return (
@@ -218,7 +218,7 @@ const Alamat = () => {
             <motion.div>
               {/* ini adalah bagian yang saya ingin tambahkan gambar maps */}
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.3489396830137!2d109.25147817411462!3d-7.426581873155667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655e99e023afb1%3A0x58606b87c5866b75!2sJl.%20Penatusan%201%20No.9%2C%20Purwokerto%20Wetan%2C%20Kec.%20Purwokerto%20Tim.%2C%20Kabupaten%20Banyumas%2C%20Jawa%20Tengah%2053111!5e0!3m2!1sid!2sid!4v1725937980981!5m2!1sid!2sid"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.8273188116!2d109.2522551702977!3d-7.593765258264069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6543dc489eb731%3A0xfa4b4bf577faadfb!2sJl.%20Teuku%20Umar%20No.10%2C%20Buntu%2C%20Kec.%20Kroya%2C%20Kabupaten%20Cilacap%2C%20Jawa%20Tengah%2053282!5e0!3m2!1sid!2sid!4v1727039425700!5m2!1sid!2sid"
                 width="100%"
                 height="250"
                 style={{
@@ -231,6 +231,20 @@ const Alamat = () => {
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
+              {/* <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.3489396830137!2d109.25147817411462!3d-7.426581873155667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655e99e023afb1%3A0x58606b87c5866b75!2sJl.%20Penatusan%201%20No.9%2C%20Purwokerto%20Wetan%2C%20Kec.%20Purwokerto%20Tim.%2C%20Kabupaten%20Banyumas%2C%20Jawa%20Tengah%2053111!5e0!3m2!1sid!2sid!4v1725937980981!5m2!1sid!2sid"
+                width="100%"
+                height="250"
+                style={{
+                  border: "0",
+                  maxWidth: "300px",
+                  border: "2px solid white",
+                  marginTop: "2rem",
+                }}
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe> */}
             </motion.div>
             <div
               style={{

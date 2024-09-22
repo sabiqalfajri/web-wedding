@@ -91,8 +91,8 @@ const Journey = () => {
                     }}
                   >
                     <p className="text-justify">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Exercitationem omnis enim alias nobis.
+                      Saat pertama kali kita bertemu, siapa sangka pertemuan ini
+                      akan menjadi awal dari sebuah cerita yang begitu indah.
                     </p>
                   </div>
                 </motion.div>
@@ -141,8 +141,8 @@ const Journey = () => {
                     }}
                   >
                     <p className="text-justify">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Exercitationem omnis enim alias nobis.
+                      Setelah melalui momen penuh suka duka, kami memutuskan
+                      untuk melangkah ketahap yang lebih serius.
                     </p>
                   </div>
                 </motion.div>

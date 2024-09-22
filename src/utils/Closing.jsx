@@ -60,7 +60,7 @@ const Closing = () => {
   }, [hasAnimated]);
 
   return (
-    <div className="wrapper" ref={refText}>
+    <div className="wrapper">
       <div className="content">
         <section className="section hero">
           <div
@@ -160,6 +160,7 @@ const Closing = () => {
               ucapan, doa, dan perhatian yang diberikan.
             </p>
             <motion.p
+              ref={refText}
               style={{
                 marginTop: "1rem",
                 marginBottom: "1rem",

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
+import { Player } from "@lottiefiles/react-lottie-player";
 
 const Surat = () => {
   const src = "/gambar/Paper.png";
@@ -80,6 +81,34 @@ const Surat = () => {
           </motion.p>
           <p className="surat-teks">(QS. Ar-Rum : 21)</p>
         </div>
+        <Player
+          src="/gambar/flower.json"
+          background="transparent"
+          speed={1}
+          loop
+          autoplay
+          style={{
+            height: "200px",
+            width: "200px",
+            position: "absolute",
+            bottom: 40,
+            right: 0,
+          }}
+        />
+        <Player
+          src="/gambar/flower.json"
+          background="transparent"
+          speed={1}
+          loop
+          autoplay
+          style={{
+            height: "200px",
+            width: "200px",
+            position: "absolute",
+            bottom: 40,
+            left: 0,
+          }}
+        />
       </motion.div>
     </>
   );
