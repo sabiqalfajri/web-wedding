@@ -263,7 +263,7 @@ body {
 }
 
 .content .section.hero {
-  background-image: url("/gambar/circlee.png");
+  background-image: url("");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -278,7 +278,7 @@ body {
   z-index: 2;
   overflow: hidden;
   perspective: 500px;
-  background: radial-gradient(circle, transparent 50%, rgba(0, 0, 0, 0.5) 51%);
+  background: radial-gradient(circle, transparent 30%, rgba(0, 0, 0, 0.5) 31%);
 }
 .image-container img {
   width: 100%;
