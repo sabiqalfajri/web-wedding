@@ -21,7 +21,7 @@ const Closing = () => {
   const text = "See you on our wedding day!";
   const [displayedText, setDisplayedText] = useState("");
   const [hasAnimated, setHasAnimated] = useState(false);
-  const refText = useRef(null);
+
   const simulateTyping = () => {
     let index = 0;
     const typingInterval = setInterval(() => {
@@ -34,30 +34,9 @@ const Closing = () => {
           setHasAnimated(false);
         }, 2000);
       }
-    }, 50);
+      return () => clearInterval(typingInterval);
+    }, []);
   };
-  const isInViewport = (element) => {
-    if (!element) return false;
-    const rect = element.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.bottom <=
-        (window.innerHeight || document.documentElement.clientHeight)
-    );
-  };
-
-  const handleScroll = () => {
-    if (ref.current && isInViewport(ref.current) && !hasAnimated) {
-      simulateTyping();
-      setHasAnimated(true);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    handleScroll();
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [hasAnimated]);
 
   return (
     <div className="wrapper">
@@ -160,7 +139,6 @@ const Closing = () => {
               ucapan, doa, dan perhatian yang diberikan.
             </p>
             <motion.p
-              ref={refText}
               style={{
                 marginTop: "1rem",
                 marginBottom: "1rem",
