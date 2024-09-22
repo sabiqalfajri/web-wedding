@@ -3,6 +3,7 @@ import { motion, useScroll } from "framer-motion";
 import { useTransform } from "framer-motion";
 import { Player } from "@lottiefiles/react-lottie-player";
 import { useEffect } from "react";
+import { useSpring } from "framer-motion";
 
 const Closing = () => {
   const ref = useRef(null);
@@ -11,11 +12,16 @@ const Closing = () => {
     offset: ["start start", "end start"], // Mengatur offset untuk zoom
   });
   const translateY = useTransform(scrollYProgress, [0, 1], [0, 800]);
+  const smoothScroll = useSpring(translateY, {
+    stiffness: 50,
+    damping: 20,
+  });
+
+  // efek typing
   const text = "See you on our wedding day!";
   const [displayedText, setDisplayedText] = useState("");
   const [hasAnimated, setHasAnimated] = useState(false);
   const refText = useRef(null);
-
   const simulateTyping = () => {
     let index = 0;
     const typingInterval = setInterval(() => {
@@ -26,7 +32,7 @@ const Closing = () => {
         setTimeout(() => {
           setDisplayedText("");
           setHasAnimated(false);
-        }, 1000);
+        }, 2000);
       }
     }, 50);
   };
@@ -54,8 +60,8 @@ const Closing = () => {
   }, [hasAnimated]);
 
   return (
-    <div className="wrapper">
-      <div className="content" ref={refText}>
+    <div className="wrapper" ref={refText}>
+      <div className="content">
         <section className="section hero">
           <div
             style={{
@@ -69,7 +75,7 @@ const Closing = () => {
               alt=""
               style={{
                 maxWidth: "22rem",
-                y: translateY,
+                y: smoothScroll,
                 transition: { duration: 0.5, ease: "easeInOut" },
               }}
             />
