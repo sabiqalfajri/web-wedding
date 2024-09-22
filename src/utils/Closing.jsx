@@ -8,28 +8,33 @@ const Closing = () => {
     target: ref,
     offset: ["start start", "end start"], // Mengatur offset untuk zoom
   });
-  const backroundSize = useTransform(
-    scrollYProgress,
-    [0, 0.8],
-    ["100%", "250%"]
-  );
-  const opacitiy = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+  const translateY = useTransform(scrollYProgress, [0, 1], [0, 200]);
+
   return (
-    <div className="wrapper" ref={ref}>
+    <div className="wrapper">
       <div className="content">
-        <motion.section className="section hero"></motion.section>
-        <motion.section className="section gradient-purple"></motion.section>
-        <section className="section gradient-blue">section 3</section>
-        <motion.div
-          className="image-container"
+        <section className="section hero">
+          <div
+            style={{
+              marginTop: "2.5rem",
+            }}
+          >
+            <motion.img
+              ref={ref}
+              src="/gambar/border-slideterakhir.png"
+              alt=""
+              style={{
+                maxWidth: "22rem",
+                y: translateY,
+              }}
+            />
+          </div>
+        </section>
+        <section
           style={{
-            scale: backroundSize, // Zoom hingga memenuhi layar (2x)
-            // originX: 0.5,
-            // originY: 0.5,
+            height: "100vh",
           }}
-        >
-          <img src="" alt="" />
-        </motion.div>
+        ></section>
       </div>
     </div>
   );
