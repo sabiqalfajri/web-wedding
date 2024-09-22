@@ -22,21 +22,34 @@ const Closing = () => {
   const [displayedText, setDisplayedText] = useState("");
   const [hasAnimated, setHasAnimated] = useState(false);
 
-  const simulateTyping = () => {
+  useEffect(() => {
     let index = 0;
-    const typingInterval = setInterval(() => {
-      setDisplayedText(text.slice(0, index + 1));
-      index += 1;
-      if (index >= text.length) {
-        clearInterval(typingInterval);
-        setTimeout(() => {
-          setDisplayedText("");
-          setHasAnimated(false);
-        }, 2000);
-      }
-      return () => clearInterval(typingInterval);
-    }, []);
-  };
+
+    const simulateTyping = () => {
+      const typingInterval = setInterval(() => {
+        setDisplayedText(text.slice(0, index + 1)); // Menampilkan teks hingga index
+        index += 1;
+
+        // Ketika teks sudah selesai ditampilkan
+        if (index > text.length) {
+          clearInterval(typingInterval); // Hentikan interval setelah teks selesai
+          setTimeout(() => {
+            setIsTyping(false); // Setelah delay, set typing ke false
+          }, 1000); // Tambahkan delay 1000ms sebelum reset
+        }
+      }, 100); // Kecepatan typing
+    };
+    if (isTyping) {
+      simulateTyping();
+    } else {
+      // Mulai ulang animasi setelah beberapa detik
+      const restartTyping = setTimeout(() => {
+        setDisplayedText(""); // Kosongkan teks
+        setIsTyping(true); // Mulai ulang efek typing
+      }, 1000); // Jeda waktu 1000ms sebelum mengulang efek
+      return () => clearTimeout(restartTyping); // Cleanup timeout saat unmount
+    }
+  }, [isTyping]);
 
   return (
     <div className="wrapper">
