@@ -8,7 +8,7 @@ const Closing = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["center center", "end start"], // Mengatur offset untuk zoom
+    offset: ["start start", "end start"], // Mengatur offset untuk zoom
   });
   const translateY = useTransform(scrollYProgress, [0, 1], [0, 800]);
   const text = "See you on our wedding day!";
@@ -55,7 +55,7 @@ const Closing = () => {
 
   return (
     <div className="wrapper">
-      <div className="content">
+      <div className="content" ref={refText}>
         <section className="section hero">
           <div
             style={{
@@ -70,6 +70,7 @@ const Closing = () => {
               style={{
                 maxWidth: "22rem",
                 y: translateY,
+                transition: { duration: 0.5, ease: "easeInOut" },
               }}
             />
           </div>
@@ -125,7 +126,6 @@ const Closing = () => {
           />
         </section>
         <section
-          ref={refText}
           style={{
             height: "100vh",
             width: "100%",
@@ -149,7 +149,7 @@ const Closing = () => {
                 paddingRight: "1rem",
               }}
             >
-              Menjadi suatu kebahagiaan bagi kami apabla Bapak/Ibu/Saudara/i
+              Menjadi suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i
               berkenan hadir dalam hari bahagia ini. Terimakasih atas segala
               ucapan, doa, dan perhatian yang diberikan.
             </p>
