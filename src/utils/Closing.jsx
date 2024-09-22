@@ -17,6 +17,8 @@ const Closing = () => {
           <div
             style={{
               marginTop: "2.5rem",
+              justifyContent: "center",
+              textAlign: "center",
             }}
           >
             <motion.img
@@ -28,13 +30,45 @@ const Closing = () => {
                 y: translateY,
               }}
             />
+            <div>
+              <p
+                style={{
+                  fontSize: "1rem",
+                  paddingLeft: "1rem",
+                  paddingRight: "1rem",
+                }}
+              >
+                Menjadi suatu kebahagiaan bagi kami jika berkenan datang ke
+                acara pernikahan kami
+              </p>
+            </div>
           </div>
+          <motion.img
+            src="/gambar/floral.svg"
+            alt=""
+            style={{
+              maxWidth: "10rem",
+              height: "auto",
+              position: "absolute",
+              bottom: -10,
+              right: 0,
+            }}
+            animate={{
+              rotate: [0, 5, -5, 0], // Goyang kanan kiri
+              filter: [
+                "drop-shadow(0 0 10px rgba(255, 255, 0, 0.5))",
+                "drop-shadow(0 0 20px rgba(255, 255, 0, 1))",
+                "drop-shadow(0 0 10px rgba(255, 255, 0, 0.5))",
+              ], // Efek glowing
+            }}
+            transition={{
+              duration: 4, // Durasi animasi
+              ease: "easeInOut",
+              repeat: Infinity, // Ulang animasi terus-menerus
+              rotate: { duration: 2, ease: "easeInOut", repeat: Infinity }, // Durasi dan pengulangan goyang
+            }}
+          />
         </section>
-        <section
-          style={{
-            height: "100vh",
-          }}
-        ></section>
       </div>
     </div>
   );
