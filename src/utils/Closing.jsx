@@ -6,7 +6,7 @@ const Closing = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start start", "end start"], // Mengatur offset untuk zoom
+    offset: ["center center", "end start"], // Mengatur offset untuk zoom
   });
   const translateY = useTransform(scrollYProgress, [0, 1], [0, 200]);
 
