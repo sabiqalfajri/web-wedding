@@ -21,6 +21,7 @@ const Closing = () => {
   const text = "See you on our wedding day!";
   const [displayedText, setDisplayedText] = useState("");
   const [hasAnimated, setHasAnimated] = useState(false);
+  const [isTyping, setIsTyping] = useState(true);
 
   useEffect(() => {
     let index = 0;
