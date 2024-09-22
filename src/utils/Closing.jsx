@@ -8,7 +8,7 @@ const Closing = () => {
     target: ref,
     offset: ["center center", "end start"], // Mengatur offset untuk zoom
   });
-  const translateY = useTransform(scrollYProgress, [0, 1], [0, 200]);
+  const translateY = useTransform(scrollYProgress, [0, 1], [0, 400]);
 
   return (
     <div className="wrapper">
