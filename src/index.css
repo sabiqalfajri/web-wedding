@@ -178,6 +178,7 @@ body {
   width: 100%;
   transition: transform 0.2s ease-out;
   overflow: hidden;
+  position: relative;
 }
 .timeline-image {
   background-image: url("/gambar/couple4.jpg");

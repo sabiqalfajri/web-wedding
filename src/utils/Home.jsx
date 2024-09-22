@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 import Galery from "./Galery";
 // import SnowfallEffect from "./Config";
 import Closing from "./Closing";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Player } from "@lottiefiles/react-lottie-player";
 
 const Home = () => {
   // gambar
@@ -283,7 +283,21 @@ const Home = () => {
               width: "100%",
             }}
             className="parallax"
-          ></div>
+          >
+            <Player
+              src="/gambar/love.json"
+              background="transparent"
+              speed={1}
+              loop
+              autoplay
+              style={{
+                height: "100%",
+                width: "100%",
+                position: "absolute",
+                bottom: 0,
+              }}
+            />
+          </div>
           {/* selesai konten yang ingin mendapat animasi ketika discroll */}
           <div>
             <Content show={show} handleShow={handleShow} />
