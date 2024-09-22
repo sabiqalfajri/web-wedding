@@ -16,7 +16,6 @@ const Closing = () => {
         <section className="section hero">
           <div
             style={{
-              marginTop: "2.5rem",
               justifyContent: "center",
               textAlign: "center",
             }}
@@ -30,18 +29,6 @@ const Closing = () => {
                 y: translateY,
               }}
             />
-            <div>
-              <p
-                style={{
-                  fontSize: "1rem",
-                  paddingLeft: "1rem",
-                  paddingRight: "1rem",
-                }}
-              >
-                Menjadi suatu kebahagiaan bagi kami jika berkenan datang ke
-                acara pernikahan kami
-              </p>
-            </div>
           </div>
           <motion.img
             src="/gambar/floral.svg"
@@ -69,6 +56,13 @@ const Closing = () => {
             }}
           />
         </section>
+        <section
+          style={{
+            height: "100vh",
+            backgroundColor: "blue",
+            zIndex: 2,
+          }}
+        ></section>
       </div>
     </div>
   );
