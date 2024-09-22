@@ -1,7 +1,8 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { motion, useScroll } from "framer-motion";
 import { useTransform } from "framer-motion";
 import { Player } from "@lottiefiles/react-lottie-player";
+import { useEffect } from "react";
 
 const Closing = () => {
   const ref = useRef(null);
@@ -9,7 +10,48 @@ const Closing = () => {
     target: ref,
     offset: ["center center", "end start"], // Mengatur offset untuk zoom
   });
-  const translateY = useTransform(scrollYProgress, [0, 1], [0, 700]);
+  const translateY = useTransform(scrollYProgress, [0, 1], [0, 800]);
+  const text = "See you on our wedding day!";
+  const [displayedText, setDisplayedText] = useState("");
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const refText = useRef(null);
+
+  const simulateTyping = () => {
+    let index = 0;
+    const typingInterval = setInterval(() => {
+      setDisplayedText(text.slice(0, index + 1));
+      index += 1;
+      if (index >= text.length) {
+        clearInterval(typingInterval);
+        setTimeout(() => {
+          setDisplayedText("");
+          setHasAnimated(false);
+        }, 1000);
+      }
+    }, 50);
+  };
+  const isInViewport = (element) => {
+    if (!element) return false;
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight)
+    );
+  };
+
+  const handleScroll = () => {
+    if (ref.current && isInViewport(ref.current) && !hasAnimated) {
+      simulateTyping();
+      setHasAnimated(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [hasAnimated]);
 
   return (
     <div className="wrapper">
@@ -83,6 +125,7 @@ const Closing = () => {
           />
         </section>
         <section
+          ref={refText}
           style={{
             height: "100vh",
             width: "100%",
@@ -110,12 +153,19 @@ const Closing = () => {
               berkenan hadir dalam hari bahagia ini. Terimakasih atas segala
               ucapan, doa, dan perhatian yang diberikan.
             </p>
-            <p>
-              <strong>See you on our wedding day!</strong>
-            </p>
+            <motion.p
+              style={{
+                marginTop: "1rem",
+                marginBottom: "1rem",
+                minHeight: "24px",
+              }}
+            >
+              <strong>{displayedText}</strong>
+            </motion.p>
             <p
               style={{
                 fontSize: "2rem",
+                fontFamily: "Dancing Script",
               }}
             >
               Mail & Asih

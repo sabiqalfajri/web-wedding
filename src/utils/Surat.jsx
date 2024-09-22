@@ -11,14 +11,13 @@ const Surat = () => {
   const [hasAnimated, setHasAnimated] = useState(false);
   const ref = useRef(null);
 
-  // Function to update the displayed text to simulate typing
   const simulateTyping = () => {
     let index = 0;
     const typingInterval = setInterval(() => {
       setDisplayedText(text.slice(0, index + 1));
       index += 1;
       if (index >= text.length) clearInterval(typingInterval);
-    }, 50); // Adjust typing speed here
+    }, 50);
   };
   const isInViewport = (element) => {
     if (!element) return false;
@@ -30,7 +29,6 @@ const Surat = () => {
     );
   };
 
-  // Event handler for scroll event
   const handleScroll = () => {
     if (ref.current && isInViewport(ref.current) && !hasAnimated) {
       simulateTyping();
@@ -38,12 +36,9 @@ const Surat = () => {
     }
   };
 
-  // Attach event listener on mount
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    // Check on initial render
     handleScroll();
-    // Clean up event listener on unmount
     return () => window.removeEventListener("scroll", handleScroll);
   }, [hasAnimated]);
 
