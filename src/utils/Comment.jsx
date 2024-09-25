@@ -6,7 +6,7 @@ import { Comments } from "@hyvor/hyvor-talk-react";
 const Coment = () => {
   useEffect(() => {
     CommentCounts.load({
-      "website-id": "11876",
+      "website-id": "11945",
     });
   }, []);
 
