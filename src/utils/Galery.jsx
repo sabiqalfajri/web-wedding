@@ -22,11 +22,12 @@ const Galery = () => {
   return (
     <>
       <div
+        className="gallery"
         style={{
           backgroundImage: `url(${src})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          height: "100vh",
+          position: "relative",
         }}
       >
         <div

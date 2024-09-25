@@ -242,3 +242,41 @@ body {
   object-fit: cover;
   object-position: center center;
 }
+
+.left-section {
+  overflow: hidden;
+  width: 66.66%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+}
+.right-section {
+  overflow-y: auto;
+  margin-left: 66.66%;
+  width: 33.33%;
+  padding: 0;
+}
+.gallery {
+  height: 100vh;
+}
+@media (max-width: 768px) {
+  .left-section {
+    display: none;
+  }
+  .right-section {
+    width: 100%;
+    overflow-y: auto;
+    margin-left: 0;
+  }
+}
+@media (min-width: 768px) {
+  .gallery {
+    height: 150vh;
+  }
+  .parallax {
+    background-attachment: scroll;
+  }
+}

@@ -7,12 +7,19 @@ import { useSpring } from "framer-motion";
 
 const Closing = () => {
   const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
+  const { scrollYProgress, scrollXProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"], // Mengatur offset untuk zoom
   });
+
   const translateY = useTransform(scrollYProgress, [0, 1], [0, 800]);
+  const translateX = useTransform(scrollYProgress, [0, 1], [0, -500]);
+
   const smoothScroll = useSpring(translateY, {
+    stiffness: 50,
+    damping: 20,
+  });
+  const smoothScrollAwan = useSpring(translateX, {
     stiffness: 50,
     damping: 20,
   });
@@ -98,6 +105,28 @@ const Closing = () => {
               rotate: { duration: 2, ease: "easeInOut", repeat: Infinity }, // Durasi dan pengulangan goyang
             }}
           />
+          {/* awan */}
+          <motion.div
+            style={{
+              position: "absolute",
+              top: 160,
+              right: 0,
+              left: 0,
+              x: smoothScrollAwan,
+            }}
+          >
+            <Player
+              src="/gambar/awan.json"
+              background="transparent"
+              speed={1}
+              loop
+              autoplay
+              style={{
+                height: "250px",
+                width: "250px",
+              }}
+            />
+          </motion.div>
           <motion.img
             src="/gambar/floral.svg"
             alt=""

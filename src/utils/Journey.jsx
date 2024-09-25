@@ -44,8 +44,8 @@ const Journey = () => {
             Bagaimana cinta kami bersemi
           </p>
         </div>
-        <Row style={{ margin: 0, padding: 0 }}>
-          <Col sm={12} md={6}>
+        {/* <Row style={{ margin: 0, padding: 0 }}>
+          <Col xm={12} md={6}>
             <ul className="timeline">
               <li>
                 <motion.div
@@ -149,7 +149,7 @@ const Journey = () => {
               </li>
             </ul>
           </Col>
-        </Row>
+        </Row> */}
       </div>
     </>
   );

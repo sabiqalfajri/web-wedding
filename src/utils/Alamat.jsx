@@ -229,6 +229,7 @@ const Alamat = () => {
                   maxWidth: "300px",
                   border: "2px solid white",
                   marginTop: "2rem",
+                  borderRadius: "15px",
                 }}
                 allowfullscreen=""
                 loading="lazy"

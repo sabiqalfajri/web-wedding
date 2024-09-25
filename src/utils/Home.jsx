@@ -302,7 +302,6 @@ const Home = () => {
           {/* selesai konten yang ingin mendapat animasi ketika discroll */}
           <div>
             <Content show={show} handleShow={handleShow} />
-            <Journey />
             <Galery />
             <Surat />
             <Alamat />
