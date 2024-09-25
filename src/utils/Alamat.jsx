@@ -27,8 +27,49 @@ const Alamat = () => {
           backgroundImage: `url(${src})`,
           paddingBottom: "3rem",
           paddingTop: "1rem",
+          position: "relative",
         }}
       >
+        <img
+          src="/gambar/flower-kiri.png"
+          alt=""
+          style={{
+            position: "absolute",
+            width: "150px",
+            bottom: 0,
+            left: 0,
+          }}
+        />
+        <img
+          src="/gambar/flower-kanan.png"
+          alt=""
+          style={{
+            position: "absolute",
+            width: "150px",
+            bottom: 0,
+            right: 0,
+          }}
+        />
+        <img
+          src="/gambar/flower-top-kiri.png"
+          alt=""
+          style={{
+            position: "absolute",
+            width: "150px",
+            top: 0,
+            left: 0,
+          }}
+        />
+        <img
+          src="/gambar/flower-top-kanan.png"
+          alt=""
+          style={{
+            position: "absolute",
+            width: "150px",
+            top: 0,
+            right: 0,
+          }}
+        />
         <div>
           <h1
             className="mt-4"
@@ -36,6 +77,7 @@ const Alamat = () => {
               fontFamily: "Dancing Script",
               color: "#e63946",
               fontSize: "3rem",
+              paddingTop: "2rem",
             }}
           >
             Informasi Acara

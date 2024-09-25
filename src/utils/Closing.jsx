@@ -105,28 +105,7 @@ const Closing = () => {
               rotate: { duration: 2, ease: "easeInOut", repeat: Infinity }, // Durasi dan pengulangan goyang
             }}
           />
-          {/* awan */}
-          <motion.div
-            style={{
-              position: "absolute",
-              top: 160,
-              right: 0,
-              left: 0,
-              x: smoothScrollAwan,
-            }}
-          >
-            <Player
-              src="/gambar/awan.json"
-              background="transparent"
-              speed={1}
-              loop
-              autoplay
-              style={{
-                height: "250px",
-                width: "250px",
-              }}
-            />
-          </motion.div>
+
           <motion.img
             src="/gambar/floral.svg"
             alt=""

@@ -4,7 +4,7 @@ import { FaCheck, FaCopy } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Gift = () => {
-  const src = "/gambar/giftBackground.png";
+  const src = "/gambar/backgroundAlamat.png";
   const [copy, setCopy] = useState({
     bri: false,
     bni: false,
@@ -38,14 +38,55 @@ const Gift = () => {
         width: "100%",
         height: "auto",
         backgroundImage: `url(${src})`,
+        position: "relative",
       }}
     >
+      <img
+        src="/gambar/top-kanan.png"
+        alt=""
+        style={{
+          position: "absolute",
+          width: "150px",
+          top: 0,
+          right: 0,
+        }}
+      />
+      <img
+        src="/gambar/top-kiri.png"
+        alt=""
+        style={{
+          position: "absolute",
+          width: "150px",
+          top: 0,
+          left: 0,
+        }}
+      />
+      <img
+        src="/gambar/flower-bottom-kiri.png"
+        alt=""
+        style={{
+          position: "absolute",
+          width: "150px",
+          bottom: 0,
+          left: 0,
+        }}
+      />
+      <img
+        src="/gambar/flower-bottom-kanan.png"
+        alt=""
+        style={{
+          position: "absolute",
+          width: "150px",
+          bottom: 0,
+          right: 0,
+        }}
+      />
       <h1
         style={{
           fontFamily: "Dancing Script",
           color: "#e63946",
           fontSize: "3.5rem",
-          paddingTop: "1rem",
+          paddingTop: "4rem",
         }}
       >
         Kirim Hadiah
@@ -95,6 +136,9 @@ const Gift = () => {
         </Button>
       </motion.div>
       <motion.div
+        style={{
+          paddingBottom: "2rem",
+        }}
         initial={{ scale: 0.8, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{
