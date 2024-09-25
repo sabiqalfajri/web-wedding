@@ -279,4 +279,9 @@ body {
   .parallax {
     background-attachment: scroll;
   }
+  .closing-div {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 4rem;
+  }
 }
