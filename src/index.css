@@ -200,54 +200,9 @@ body {
 .comment-input {
   border-bottom: 1px solid #ccc;
   padding: 1rem;
-  background-color: #f9f9f9;
+  background-color: #ceb07c;
 }
-/* .snnow,
-.snnow::after,
-.snnow::before {
-  content: "";
-  position: absolute;
-  top: -650px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  will-change: transform;
-  background-image: radial-gradient(6px 6px at 100px 50px, #fff, transparent),
-    radial-gradient(8px 8px at 200px 150px, #fff, transparent),
-    radial-gradient(5px 5px at 300px 250px, #fff, transparent),
-    radial-gradient(6px 6px at 400px 350px, #fff, transparent),
-    radial-gradient(8px 8px at 500px 100px, #fff, transparent),
-    radial-gradient(5px 5px at 50px 200px, #fff, transparent),
-    radial-gradient(6px 6px at 150px 300px, #fff, transparent),
-    radial-gradient(8px 8px at 250px 400px, #fff, transparent),
-    radial-gradient(5px 5px at 350px 500px, #fff, transparent);
-  background-size: 650px 650px;
 
-  animation: snowAnim 3s linear;
-  animation-iteration-count: infinite;
-}
-.snnow::after {
-  margin-left: -250px;
-  opacity: 0.5;
-  filter: blur(1px);
-  animation-direction: reverse;
-  animation-duration: 6s;
-}
-.snnow::before {
-  margin-left: -350px;
-  opacity: 0.7;
-  filter: blur(2px);
-  animation-direction: reverse;
-  animation-duration: 9s;
-}
-@keyframes snowAnim {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-  to {
-    transform: translate3d(0, 650px, 0);
-  }
-} */
 .wrapper,
 .content {
   position: relative;

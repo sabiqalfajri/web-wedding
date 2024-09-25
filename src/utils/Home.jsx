@@ -155,7 +155,7 @@ const Home = () => {
               fontSize: "3rem",
             }}
           >
-            Ismail & Asih
+            Mail & Asih
           </motion.h1>
           <h5
             className="mt-2"

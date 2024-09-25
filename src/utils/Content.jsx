@@ -71,7 +71,7 @@ const Content = ({ show, handleShow }) => {
             textAlign: "center",
           }}
         >
-          Putra dari Bapak Sulkhani dan Ibu Rusmini <br /> Buntu - Kroya
+          Putra dari Bapak Sulkhani(saring) dan Ibu Rusmini <br /> Buntu - Kroya
         </motion.p>
         <div
           style={{

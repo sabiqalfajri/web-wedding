@@ -15,7 +15,6 @@ const Gift = () => {
     navigator.clipboard.writeText(rekening).then(
       () => {
         setCopy((prev) => ({ ...prev, [bank]: true }));
-
         setTimeout(() => {
           setCopy((prev) => ({ ...prev, [bank]: false }));
         }, 1500);
