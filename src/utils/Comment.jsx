@@ -30,7 +30,7 @@ const Coment = () => {
             paddingRight: "1rem",
           }}
         >
-          <Comments website-id="11876" page-id="default-page-id" />
+          <Comments website-id="11945" page-id="default-page-id" />
         </div>
       </div>
     </div>
