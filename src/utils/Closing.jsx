@@ -139,7 +139,7 @@ const Closing = () => {
         style={{
           height: "100vh",
           width: "100%",
-          background: "url('/gambar/Closing.png')",
+          background: "url('/gambar/brown-closing.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           zIndex: 2,
@@ -151,21 +151,90 @@ const Closing = () => {
           boxSizing: "border-box",
         }}
       >
+        {/* floral brown */}
         <img
-          src="/gambar/border-slideterakhir.png"
+          src="/gambar/brown-floral-top.png"
           alt=""
           style={{
             position: "absolute",
-            width: "270px",
-            top: 30,
-            paddingTop: "2rem",
+            width: "300px",
+            top: 0,
+            left: 0,
+          }}
+        />
+        <img
+          src="/gambar/brown-floral-bottom.png"
+          alt=""
+          style={{
+            position: "absolute",
+            width: "300px",
+            bottom: 0,
+            right: 0,
+          }}
+        />
+        {/* selesai floral brown */}
+        <img
+          src="/gambar/frame-top-kiri.png"
+          alt=""
+          style={{
+            position: "absolute",
+            width: "200px",
+            top: 80,
+            left: 85,
+            zIndex: 2,
+          }}
+        />
+        <img
+          src="/gambar/frme-bottom-kiri.png"
+          alt=""
+          style={{
+            position: "absolute",
+            width: "200px",
+            bottom: 280,
+            left: 75,
+            zIndex: 2,
+          }}
+        />
+        <img
+          src="/gambar/frame-top-kanan.png"
+          alt=""
+          style={{
+            position: "absolute",
+            width: "200px",
+            top: 80,
+            right: 45,
+            zIndex: 2,
+          }}
+        />
+        <img
+          src="/gambar/frame-bottom-kanan.png"
+          alt=""
+          style={{
+            position: "absolute",
+            width: "200px",
+            bottom: 280,
+            right: 65,
+            zIndex: 2,
+          }}
+        />
+
+        <img
+          src="/gambar/couple6.jpg"
+          alt=""
+          style={{
+            position: "absolute",
+            width: "180px",
+            top: 90,
+            borderRadius: "20px",
+            marginTop: "2rem",
+            zIndex: 1,
           }}
         />
 
         <div
           className="closing-div"
           style={{
-            paddingTop: "11rem",
+            marginTop: "23rem",
           }}
         >
           <p
