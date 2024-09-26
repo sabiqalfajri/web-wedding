@@ -1,12 +1,13 @@
 import { Col, Row } from "react-bootstrap";
 import { motion } from "framer-motion";
+import { Player } from "@lottiefiles/react-lottie-player";
 
 const Journey = () => {
   const src = "/gambar/information.png";
   return (
     <>
       <div
-      className="journey"
+        className="journey"
         style={{
           backgroundImage: `url(${src})`,
           backgroundPosition: "center",
@@ -15,6 +16,35 @@ const Journey = () => {
           position: "relative",
         }}
       >
+        <Player
+          src="/gambar/butterfly2.json"
+          background="transparent"
+          speed={1}
+          loop
+          autoplay
+          style={{
+            height: "50px",
+            width: "50px",
+            position: "absolute",
+            top: 135,
+            right: 130,
+          }}
+        />
+        <Player
+          src="/gambar/butterfly2.json"
+          background="transparent"
+          speed={1}
+          loop
+          autoplay
+          style={{
+            height: "50px",
+            width: "50px",
+            position: "absolute",
+            bottom: 310,
+            right: 130,
+            zIndex: 2,
+          }}
+        />
         <div
           style={{
             justifyContent: "center",
