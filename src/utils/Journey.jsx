@@ -13,38 +13,8 @@ const Journey = () => {
           backgroundPosition: "center",
           backgroundSize: "cover",
           height: "100vh",
-          position: "relative",
         }}
       >
-        <Player
-          src="/gambar/butterfly2.json"
-          background="transparent"
-          speed={1}
-          loop
-          autoplay
-          style={{
-            height: "50px",
-            width: "50px",
-            position: "absolute",
-            top: 135,
-            right: 130,
-          }}
-        />
-        <Player
-          src="/gambar/butterfly2.json"
-          background="transparent"
-          speed={1}
-          loop
-          autoplay
-          style={{
-            height: "50px",
-            width: "50px",
-            position: "absolute",
-            bottom: 310,
-            right: 130,
-            zIndex: 2,
-          }}
-        />
         <div
           style={{
             justifyContent: "center",
@@ -56,8 +26,38 @@ const Journey = () => {
             margin: "0 auto",
             maxWidth: "100%",
             marginTop: "1rem",
+            position: "relative",
           }}
         >
+          <Player
+            src="/gambar/butterfly2.json"
+            background="transparent"
+            speed={1}
+            loop
+            autoplay
+            style={{
+              height: "50px",
+              width: "50px",
+              position: "absolute",
+              top: 135,
+              right: 130,
+            }}
+          />
+          <Player
+            src="/gambar/butterfly2.json"
+            background="transparent"
+            speed={1}
+            loop
+            autoplay
+            style={{
+              height: "50px",
+              width: "50px",
+              position: "absolute",
+              top: 370,
+              right: 130,
+              zIndex: 2,
+            }}
+          />
           <h1
             style={{
               fontFamily: "Dancing Script",

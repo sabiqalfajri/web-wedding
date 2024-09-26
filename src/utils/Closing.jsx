@@ -27,7 +27,6 @@ const Closing = () => {
   // efek typing
   const text = "See you on our wedding day!";
   const [displayedText, setDisplayedText] = useState("");
-  const [hasAnimated, setHasAnimated] = useState(false);
   const [isTyping, setIsTyping] = useState(true);
 
   useEffect(() => {
@@ -35,17 +34,17 @@ const Closing = () => {
 
     const simulateTyping = () => {
       const typingInterval = setInterval(() => {
-        setDisplayedText(text.slice(0, index + 1)); // Menampilkan teks hingga index
+        setDisplayedText(text.slice(0, index + 1));
         index += 1;
 
         // Ketika teks sudah selesai ditampilkan
         if (index > text.length) {
-          clearInterval(typingInterval); // Hentikan interval setelah teks selesai
+          clearInterval(typingInterval);
           setTimeout(() => {
-            setIsTyping(false); // Setelah delay, set typing ke false
-          }, 1000); // Tambahkan delay 1000ms sebelum reset
+            setIsTyping(false);
+          }, 1000);
         }
-      }, 100); // Kecepatan typing
+      }, 100);
     };
     if (isTyping) {
       simulateTyping();
