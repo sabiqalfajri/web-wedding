@@ -9,10 +9,14 @@ const First = () => {
           justifyContent: "center",
           alignItems: "center",
           display: "flex",
-          backgroundColor: " #ceb07c",
+          background: "url('/gambar/first-background.png')",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          flexDirection: "column",
         }}
       >
-        <h1>ini adalah first</h1>
+        <h1>Wedding Of</h1>
+        <h1>Mail & Asih</h1>
       </div>
     </>
   );

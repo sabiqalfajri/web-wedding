@@ -183,6 +183,7 @@ const Closing = () => {
             width: "200px",
             top: 80,
             left: 85,
+            
             zIndex: 2,
           }}
         />

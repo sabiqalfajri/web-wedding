@@ -11,6 +11,7 @@ const Journey = () => {
           backgroundPosition: "center",
           backgroundSize: "cover",
           height: "100vh",
+          position: "relative",
         }}
       >
         <div
@@ -44,7 +45,7 @@ const Journey = () => {
             Bagaimana cinta kami bersemi
           </p>
         </div>
-        {/* <Row style={{ margin: 0, padding: 0 }}>
+        <Row style={{ margin: 0, padding: 0 }}>
           <Col xm={12} md={6}>
             <ul className="timeline">
               <li>
@@ -149,7 +150,7 @@ const Journey = () => {
               </li>
             </ul>
           </Col>
-        </Row> */}
+        </Row>
       </div>
     </>
   );
