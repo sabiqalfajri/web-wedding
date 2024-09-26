@@ -136,6 +136,7 @@ const Closing = () => {
         </div>
       </div> */}
       <section
+        className="section-closing"
         style={{
           height: "100vh",
           width: "100%",
@@ -174,6 +175,7 @@ const Closing = () => {
         />
         {/* selesai floral brown */}
         <img
+          className="flower flower-left"
           src="/gambar/frame-top-kiri.png"
           alt=""
           style={{
@@ -185,6 +187,7 @@ const Closing = () => {
           }}
         />
         <img
+          className="flower-bottom flower bottom-left"
           src="/gambar/frme-bottom-kiri.png"
           alt=""
           style={{
@@ -196,6 +199,7 @@ const Closing = () => {
           }}
         />
         <img
+          className="flower flower-right"
           src="/gambar/frame-top-kanan.png"
           alt=""
           style={{
@@ -207,6 +211,7 @@ const Closing = () => {
           }}
         />
         <img
+          className="flower-bottom flower bottom-right"
           src="/gambar/frame-bottom-kanan.png"
           alt=""
           style={{
@@ -219,11 +224,11 @@ const Closing = () => {
         />
 
         <img
+          className="gambar-couple"
           src="/gambar/couple6.jpg"
           alt=""
           style={{
             position: "absolute",
-            width: "180px",
             top: 90,
             borderRadius: "20px",
             marginTop: "2rem",

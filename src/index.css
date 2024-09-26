@@ -272,6 +272,10 @@ body {
     margin-left: 0;
   }
 }
+.gambar-couple {
+  width: 180px;
+}
+
 @media (min-width: 768px) {
   .gallery {
     height: 150vh;
@@ -283,5 +287,32 @@ body {
     padding-left: 2rem;
     padding-right: 2rem;
     margin-top: 4rem;
+  }
+  .section-closing {
+    height: 200vh;
+    padding-bottom: 2rem;
+  }
+  .section-closing .gambar-couple {
+    width: 130px;
+  }
+
+  .flower {
+    width: 120px !important;
+  }
+  .flower-left {
+    left: 120px !important;
+    top: 90px !important;
+  }
+  .flower-right {
+    right: 105px !important;
+    top: 90px !important;
+  }
+  .bottom-right {
+    bottom: 220px !important;
+    right: 110px !important;
+  }
+  .bottom-left {
+    top: 245px !important;
+    left: 110px !important;
   }
 }
