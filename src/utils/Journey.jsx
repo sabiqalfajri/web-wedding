@@ -39,8 +39,8 @@ const Journey = () => {
               height: "50px",
               width: "50px",
               position: "absolute",
-              top: 135,
-              right: 130,
+              top: 145,
+              right: 150,
             }}
           />
           <Player
@@ -53,8 +53,8 @@ const Journey = () => {
               height: "50px",
               width: "50px",
               position: "absolute",
-              top: 370,
-              right: 130,
+              top: 390,
+              right: 150,
               zIndex: 2,
             }}
           />
