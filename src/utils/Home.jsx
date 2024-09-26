@@ -113,6 +113,7 @@ const Home = () => {
         }}
       >
         <div
+          className="text-first"
           style={{
             display: "flex",
             justifyContent: "center",
