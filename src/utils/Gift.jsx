@@ -1,9 +1,37 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "react-bootstrap";
 import { FaCheck, FaCopy } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Gift = () => {
+  useEffect(() => {
+    // Memuat script snowfall.js saat komponen mount
+    const script = document.createElement("script");
+    script.src = "/snowfall.min.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    // Menjalankan efek salju setelah script di-load
+    script.onload = () => {
+      window.snowFall.snow(document.body, {
+        flakeCount: 100, // Sesuaikan dengan kebutuhan
+        flakeColor: "#ffffff",
+        minSize: 4,
+        maxSize: 10,
+        minSpeed: 1,
+        maxSpeed: 3,
+      });
+    };
+
+    // Cleanup untuk menghapus efek salju saat komponen di-unmount
+    return () => {
+      if (window.snowFall && window.snowFall.clear) {
+        window.snowFall.clear();
+      }
+      document.body.removeChild(script);
+    };
+  }, []);
+
   const src = "/gambar/backgroundAlamat.png";
   const [copy, setCopy] = useState({
     bri: false,
