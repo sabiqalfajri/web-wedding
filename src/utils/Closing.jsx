@@ -212,7 +212,7 @@ const Closing = () => {
           style={{
             position: "absolute",
             width: "200px",
-            bottom: 280,
+            bottom: 370,
             right: 65,
             zIndex: 2,
           }}
