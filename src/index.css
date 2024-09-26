@@ -335,4 +335,11 @@ body {
   .journey {
     height: 150vh !important;
   }
+  .butterfly-2 {
+    top: 420px !important;
+    right: 195px !important;
+  }
+  .butterfly-1 {
+    right: 195px !important;
+  }
 }
