@@ -121,12 +121,16 @@ const Home = () => {
             height: "100vh",
             flexDirection: "column",
             marginTop: "3.5rem",
+            color: "white",
+            textShadow: "2px 2px 4px rgba(0, 0, 0, 0.8)",
           }}
         >
           <h5
             className="mb-2 home"
             style={{
               fontSize: "1rem",
+              color: "white",
+              textShadow: "2px 2px 4px rgba(0, 0, 0, 0.8)",
             }}
           >
             Kepada Bapak/Ibu/Saudara/i,
@@ -303,6 +307,7 @@ const Home = () => {
           {/* selesai konten yang ingin mendapat animasi ketika discroll */}
           <div>
             <Content show={show} handleShow={handleShow} />
+            <Journey />
             <Galery />
             <Surat />
             <Alamat />

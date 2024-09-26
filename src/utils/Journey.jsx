@@ -6,6 +6,7 @@ const Journey = () => {
   return (
     <>
       <div
+      className="journey"
         style={{
           backgroundImage: `url(${src})`,
           backgroundPosition: "center",
