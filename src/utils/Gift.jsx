@@ -41,7 +41,17 @@ const Gift = () => {
         position: "relative",
       }}
     >
-      <img
+      <motion.img
+        initial={{ scale: 0, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        transition={{
+          delay: 0.2,
+          scale: { type: "spring", stiffness: 60 },
+          opacity: { duration: 1 },
+          ease: "easeIn",
+          duration: 2,
+        }}
+        viewport={{ once: true }}
         src="/gambar/top-kanan.png"
         alt=""
         style={{
@@ -51,7 +61,17 @@ const Gift = () => {
           right: 0,
         }}
       />
-      <img
+      <motion.img
+        initial={{ scale: 0, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        transition={{
+          delay: 0.2,
+          scale: { type: "spring", stiffness: 60 },
+          opacity: { duration: 1 },
+          ease: "easeIn",
+          duration: 2,
+        }}
+        viewport={{ once: true }}
         src="/gambar/top-kiri.png"
         alt=""
         style={{
@@ -61,7 +81,17 @@ const Gift = () => {
           left: 0,
         }}
       />
-      <img
+      <motion.img
+        initial={{ scale: 0, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        transition={{
+          delay: 0.2,
+          scale: { type: "spring", stiffness: 60 },
+          opacity: { duration: 1 },
+          ease: "easeIn",
+          duration: 2,
+        }}
+        viewport={{ once: true }}
         src="/gambar/flower-bottom-kiri.png"
         alt=""
         style={{
@@ -71,7 +101,17 @@ const Gift = () => {
           left: 0,
         }}
       />
-      <img
+      <motion.img
+        initial={{ scale: 0, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        transition={{
+          delay: 0.2,
+          scale: { type: "spring", stiffness: 60 },
+          opacity: { duration: 1 },
+          ease: "easeIn",
+          duration: 2,
+        }}
+        viewport={{ once: true }}
         src="/gambar/flower-bottom-kanan.png"
         alt=""
         style={{

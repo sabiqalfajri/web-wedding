@@ -153,7 +153,17 @@ const Closing = () => {
         }}
       >
         {/* floral brown */}
-        <img
+        <motion.img
+          initial={{ scale: 0, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            scale: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 2,
+          }}
+          viewport={{ once: true }}
           src="/gambar/brown-floral-top.png"
           alt=""
           style={{
@@ -163,7 +173,17 @@ const Closing = () => {
             left: 0,
           }}
         />
-        <img
+        <motion.img
+          initial={{ scale: 0, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            scale: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 2,
+          }}
+          viewport={{ once: true }}
           src="/gambar/brown-floral-bottom.png"
           alt=""
           style={{
@@ -174,7 +194,17 @@ const Closing = () => {
           }}
         />
         {/* selesai floral brown */}
-        <img
+        <motion.img
+          initial={{ scale: 0, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            scale: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 2,
+          }}
+          viewport={{ once: true }}
           className="flower flower-left"
           src="/gambar/frame-top-kiri.png"
           alt=""
@@ -183,11 +213,21 @@ const Closing = () => {
             width: "200px",
             top: 80,
             left: 85,
-            
+
             zIndex: 2,
           }}
         />
-        <img
+        <motion.img
+          initial={{ scale: 0, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            scale: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 2,
+          }}
+          viewport={{ once: true }}
           className="flower-bottom flower bottom-left"
           src="/gambar/frme-bottom-kiri.png"
           alt=""
@@ -199,7 +239,17 @@ const Closing = () => {
             zIndex: 2,
           }}
         />
-        <img
+        <motion.img
+          initial={{ scale: 0, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            scale: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 2,
+          }}
+          viewport={{ once: true }}
           className="flower flower-right"
           src="/gambar/frame-top-kanan.png"
           alt=""
@@ -211,7 +261,17 @@ const Closing = () => {
             zIndex: 2,
           }}
         />
-        <img
+        <motion.img
+          initial={{ scale: 0, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            scale: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 2,
+          }}
+          viewport={{ once: true }}
           className="flower-bottom flower bottom-right"
           src="/gambar/frame-bottom-kanan.png"
           alt=""

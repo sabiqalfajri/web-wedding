@@ -30,7 +30,17 @@ const Alamat = () => {
           position: "relative",
         }}
       >
-        <img
+        <motion.img
+          initial={{ scale: 0, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            scale: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 2,
+          }}
+          viewport={{ once: true }}
           src="/gambar/flower-kiri.png"
           alt=""
           style={{
@@ -40,7 +50,17 @@ const Alamat = () => {
             left: 0,
           }}
         />
-        <img
+        <motion.img
+          initial={{ scale: 0, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            scale: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 2,
+          }}
+          viewport={{ once: true }}
           src="/gambar/flower-kanan.png"
           alt=""
           style={{
@@ -50,7 +70,17 @@ const Alamat = () => {
             right: 0,
           }}
         />
-        <img
+        <motion.img
+          initial={{ scale: 0, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            scale: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 2,
+          }}
+          viewport={{ once: true }}
           src="/gambar/flower-top-kiri.png"
           alt=""
           style={{
@@ -60,7 +90,17 @@ const Alamat = () => {
             left: 0,
           }}
         />
-        <img
+        <motion.img
+          initial={{ scale: 0, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            scale: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 2,
+          }}
+          viewport={{ once: true }}
           src="/gambar/flower-top-kanan.png"
           alt=""
           style={{
