@@ -30,10 +30,6 @@ const Coment = ({ url, identifier, title }) => {
             paddingRight: "1rem",
           }}
         >
-          <CommentCount shortname={disqusShortname} config={disqusConfig}>
-            {/* Placeholder untuk jumlah komentar */}
-            {(count) => `${count} Comments`}
-          </CommentCount>
           <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
         </div>
       </div>

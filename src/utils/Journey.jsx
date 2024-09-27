@@ -1,8 +1,16 @@
 import { Col, Row } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { Player } from "@lottiefiles/react-lottie-player";
+import { useState } from "react";
+import LightboxLogic from "./Lightbox";
 
 const Journey = () => {
+  const images = [
+    { src: "/gambar/couple4.jpg" },
+    { src: "/gambar/couple5.jpg" },
+  ];
+  const [photoIndex, setPhotoIndex] = useState(0);
+  const [open, setOpen] = useState(false);
   const src = "/gambar/information.png";
   return (
     <>
@@ -96,6 +104,12 @@ const Journey = () => {
                   className="timeline-image"
                   style={{
                     marginLeft: "1.3rem",
+                    backgroundImage: `url(${images[0]?.src})`,
+                    cursor: "pointer",
+                  }}
+                  onClick={() => {
+                    setPhotoIndex(0);
+                    setOpen(true);
                   }}
                 ></motion.div>
                 <motion.div
@@ -146,6 +160,12 @@ const Journey = () => {
                   className="timeline-image image-kedua"
                   style={{
                     marginLeft: "1.3rem",
+                    backgroundImage: `url(${images[1]?.src})`,
+                    cursor: "pointer",
+                  }}
+                  onClick={() => {
+                    setPhotoIndex(1);
+                    setOpen(true);
                   }}
                 ></motion.div>
                 <motion.div
@@ -185,6 +205,13 @@ const Journey = () => {
             </ul>
           </Col>
         </Row>
+        <LightboxLogic
+          images={images}
+          photoIndex={photoIndex}
+          setPhotoIndex={setPhotoIndex}
+          open={open}
+          setOpen={setOpen}
+        />
       </div>
     </>
   );

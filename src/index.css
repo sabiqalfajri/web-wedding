@@ -180,12 +180,10 @@ body {
   overflow: hidden;
 }
 .timeline-image {
-  background-image: url("/gambar/couple4.jpg");
   background-size: cover;
   background-position: center;
 }
 .image-kedua {
-  background-image: url("/gambar/couple5.jpg");
   background-size: cover;
   background-position: center;
 }
