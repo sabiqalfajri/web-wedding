@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { DiscussionEmbed, CommentCount } from "disqus-react";
 
 const Coment = ({ url, identifier, title }) => {
-  const disqusShortname = "'wedding-website-4"; // Ganti dengan shortname Disqus Anda
+  const disqusShortname = "digitalsabiqcom"; // Ganti dengan shortname Disqus Anda
 
   const disqusConfig = {
     url: url, // Diterima dari props

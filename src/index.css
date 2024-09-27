@@ -262,6 +262,9 @@ body {
 .gallery {
   height: 100vh;
 }
+.disqus-subscription {
+  display: none !important;
+}
 @media (max-width: 768px) {
   .left-section {
     display: none;
