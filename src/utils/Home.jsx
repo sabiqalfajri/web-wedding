@@ -92,11 +92,9 @@ const Home = () => {
     }, 0);
   };
 
-  const article = {
-    id: "unique-article-id",
-    url: window.location.href,
-    title: "Judul Halaman",
-  };
+  const disqusUrl = window.location.href;
+  const disqusIdentifier = "wedding-page-123";
+  const disqusTitle = "Wedding Invitation";
 
   return (
     <>
@@ -314,7 +312,11 @@ const Home = () => {
             <Gift />
             <Confirm />
             <Closing />
-            <Coment />
+            <Coment
+              url={disqusUrl}
+              identifier={disqusIdentifier}
+              title={disqusTitle}
+            />
           </div>
         </div>
       )}

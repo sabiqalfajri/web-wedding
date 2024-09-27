@@ -1,15 +1,15 @@
 import React, { useEffect } from "react";
-import { CommentCount } from "@hyvor/hyvor-talk-react";
-import { CommentCounts } from "@hyvor/hyvor-talk-base";
-import { Comments } from "@hyvor/hyvor-talk-react";
+import { DiscussionEmbed, CommentCount } from "disqus-react";
 
-const Coment = () => {
-  useEffect(() => {
-    CommentCounts.load({
-      "website-id": "11945",
-    });
-  }, []);
+const Coment = ({ url, identifier, title }) => {
+  const disqusShortname = "'wedding-website-4"; // Ganti dengan shortname Disqus Anda
 
+  const disqusConfig = {
+    url: url, // Diterima dari props
+    identifier: identifier, // ID unik halaman dari props
+    title: title, // Judul halaman dari props
+    language: "en", // Bahasa opsional
+  };
   return (
     <div
       style={{
@@ -30,7 +30,11 @@ const Coment = () => {
             paddingRight: "1rem",
           }}
         >
-          <Comments website-id="11945" page-id="default-page-id" />
+          <CommentCount shortname={disqusShortname} config={disqusConfig}>
+            {/* Placeholder untuk jumlah komentar */}
+            {(count) => `${count} Comments`}
+          </CommentCount>
+          <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
         </div>
       </div>
     </div>
