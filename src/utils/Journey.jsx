@@ -37,38 +37,6 @@ const Journey = () => {
             position: "relative",
           }}
         >
-          <Player
-            className="butterfly-1"
-            src="/gambar/butterfly2.json"
-            background="transparent"
-            speed={1}
-            loop
-            autoplay
-            style={{
-              height: "50px",
-              width: "50px",
-              position: "absolute",
-              top: 145,
-              right: 150,
-              zIndex: 2,
-            }}
-          />
-          <Player
-            className="butterfly-2"
-            src="/gambar/butterfly2.json"
-            background="transparent"
-            speed={1}
-            loop
-            autoplay
-            style={{
-              height: "50px",
-              width: "50px",
-              position: "absolute",
-              top: 395,
-              right: 150,
-              zIndex: 2,
-            }}
-          />
           <h1
             style={{
               fontFamily: "Dancing Script",
