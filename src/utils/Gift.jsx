@@ -167,6 +167,7 @@ const Gift = () => {
           ease: "easeInOut",
           delay: 0.1,
         }}
+        viewport={{ once: true }}
       >
         <img
           style={{
@@ -214,6 +215,7 @@ const Gift = () => {
           ease: "easeInOut",
           delay: 0.2,
         }}
+        viewport={{ once: true }}
         className="mb-5"
       >
         <img

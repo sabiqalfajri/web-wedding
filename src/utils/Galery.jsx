@@ -57,6 +57,7 @@ const Galery = () => {
               y: { type: "spring", stiffness: 60 },
               scale: { type: "spring", stiffness: 60 },
             }}
+            viewport={{ once: true }}
             onClick={() => {
               setPhotoIndex(0);
               setOpen(true);
@@ -84,6 +85,7 @@ const Galery = () => {
               y: { type: "spring", stiffness: 60 },
               scale: { type: "spring", stiffness: 60 },
             }}
+            viewport={{ once: true }}
             onClick={() => {
               setPhotoIndex(1);
               setOpen(true);
@@ -111,6 +113,7 @@ const Galery = () => {
               gridRow: "1 / 1",
               gridColumn: "1 / 1",
             }}
+            viewport={{ once: true }}
             initial={{ opacity: 0, x: -100, scale: 0.2 }}
             whileInView={{ opacity: 1, x: 0, scale: 1 }}
             transition={{
@@ -146,6 +149,7 @@ const Galery = () => {
               gridRow: "1 / 1",
               zIndex: "3",
             }}
+            viewport={{ once: true }}
             initial={{ opacity: 0, x: 100, scale: 0.2 }}
             whileInView={{ opacity: 1, x: 0, scale: 1 }}
             transition={{
@@ -208,6 +212,7 @@ const Galery = () => {
               y: { type: "spring", stiffness: 60 },
               scale: { type: "spring", stiffness: 60 },
             }}
+            viewport={{ once: true }}
             onClick={() => {
               setPhotoIndex(1);
               setOpen(true);
@@ -240,6 +245,7 @@ const Galery = () => {
               y: { type: "spring", stiffness: 60 },
               scale: { type: "spring", stiffness: 60 },
             }}
+            viewport={{ once: true }}
             onClick={() => {
               setPhotoIndex(4);
               setOpen(true);

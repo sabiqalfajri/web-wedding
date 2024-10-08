@@ -69,6 +69,7 @@ const Journey = () => {
                     ease: "easeIn",
                     duration: 1,
                   }}
+                  viewport={{ once: true }}
                   className="timeline-image"
                   style={{
                     marginLeft: "1.3rem",
@@ -90,6 +91,7 @@ const Journey = () => {
                     ease: "easeIn",
                     duration: 1,
                   }}
+                  viewport={{ once: true }}
                   className="timeline-panel"
                   style={{
                     fontSize: "0.8rem",
@@ -125,6 +127,7 @@ const Journey = () => {
                     ease: "easeIn",
                     duration: 1,
                   }}
+                  viewport={{ once: true }}
                   className="timeline-image image-kedua"
                   style={{
                     marginLeft: "1.3rem",
@@ -146,6 +149,7 @@ const Journey = () => {
                     ease: "easeIn",
                     duration: 1,
                   }}
+                  viewport={{ once: true }}
                   className="timeline-panel"
                   style={{
                     fontSize: "0.8rem",

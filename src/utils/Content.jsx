@@ -28,6 +28,7 @@ const Content = ({ show, handleShow }) => {
             ease: "easeIn",
             duration: 3,
           }}
+          viewport={{ once: true }}
           style={{
             marginTop: "3.5rem",
             maxWidth: "205px",
@@ -50,6 +51,7 @@ const Content = ({ show, handleShow }) => {
             ease: "easeIn",
             duration: 1,
           }}
+          viewport={{ once: true }}
           className="mt-2"
         >
           Achmad Ismail
@@ -64,6 +66,7 @@ const Content = ({ show, handleShow }) => {
             ease: "easeIn",
             duration: 1,
           }}
+          viewport={{ once: true }}
           className="mx-auto"
           style={{
             fontSize: "0.8rem",
@@ -88,6 +91,7 @@ const Content = ({ show, handleShow }) => {
               ease: "easeIn",
               duration: 3,
             }}
+            viewport={{ once: true }}
             style={{
               marginTop: "3.5rem",
               maxWidth: "205px",
@@ -110,6 +114,7 @@ const Content = ({ show, handleShow }) => {
               ease: "easeIn",
               duration: 1,
             }}
+            viewport={{ once: true }}
             className="mt-2"
           >
             Mistriasih
@@ -124,6 +129,7 @@ const Content = ({ show, handleShow }) => {
               ease: "easeIn",
               duration: 1,
             }}
+            viewport={{ once: true }}
             className="mx-auto"
             style={{
               fontSize: "0.8rem",

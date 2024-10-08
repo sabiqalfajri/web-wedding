@@ -148,6 +148,7 @@ const Alamat = () => {
                 ease: "easeIn",
                 duration: 1,
               }}
+              viewport={{ once: true }}
             >
               <Card
                 className="alamat text-center mt-2"
@@ -228,6 +229,7 @@ const Alamat = () => {
                 ease: "easeIn",
                 duration: 1,
               }}
+              viewport={{ once: true }}
             >
               <Card
                 className="alamat text-center mt-2"
