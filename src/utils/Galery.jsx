@@ -73,6 +73,7 @@ const Galery = () => {
                 objectFit: "cover",
                 paddingRight: "1rem",
               }}
+              loading="lazy"
             />
           </motion.div>
           <motion.div
@@ -97,6 +98,7 @@ const Galery = () => {
                 setPhotoIndex(index);
                 setOpen(true);
               }}
+              loading="lazy"
               alt=""
               style={{
                 maxWidth: "250px",
@@ -140,6 +142,7 @@ const Galery = () => {
                 top: "140%",
                 left: "65%",
               }}
+              loading="lazy"
             />
           </motion.div>
           <motion.div
@@ -176,6 +179,7 @@ const Galery = () => {
                 top: "240%",
                 right: "70%",
               }}
+              loading="lazy"
             />
           </motion.div>
           <div
@@ -230,6 +234,7 @@ const Galery = () => {
                 marginTop: "2rem",
                 marginRight: "2rem",
               }}
+              loading="lazy"
             />
           </motion.div>
           <motion.div
@@ -262,6 +267,7 @@ const Galery = () => {
                 marginTop: "5rem",
                 objectFit: "cover",
               }}
+              loading="lazy"
             />
           </motion.div>
         </div>

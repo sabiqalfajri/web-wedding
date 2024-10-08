@@ -51,6 +51,7 @@ const Gift = () => {
           ease: "easeIn",
           duration: 2,
         }}
+        loading="lazy"
         viewport={{ once: true }}
         src="/gambar/top-kanan.webp"
         alt=""
@@ -71,6 +72,7 @@ const Gift = () => {
           ease: "easeIn",
           duration: 2,
         }}
+        loading="lazy"
         viewport={{ once: true }}
         src="/gambar/top-kiri.webp"
         alt=""
@@ -91,6 +93,7 @@ const Gift = () => {
           ease: "easeIn",
           duration: 2,
         }}
+        loading="lazy"
         viewport={{ once: true }}
         src="/gambar/flower-bottom-kiri.webp"
         alt=""
@@ -111,6 +114,7 @@ const Gift = () => {
           ease: "easeIn",
           duration: 2,
         }}
+        loading="lazy"
         viewport={{ once: true }}
         src="/gambar/flower-bottom-kanan.webp"
         alt=""

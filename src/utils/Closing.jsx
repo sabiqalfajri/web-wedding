@@ -162,6 +162,7 @@ const Closing = () => {
             ease: "easeIn",
             duration: 2,
           }}
+          loading="lazy"
           viewport={{ once: true }}
           src="/gambar/brown-floral-top.webp"
           alt=""
@@ -182,6 +183,7 @@ const Closing = () => {
             ease: "easeIn",
             duration: 2,
           }}
+          loading="lazy"
           viewport={{ once: true }}
           src="/gambar/brown-floral-bottom.webp"
           alt=""
