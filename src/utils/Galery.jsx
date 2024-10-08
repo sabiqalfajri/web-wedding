@@ -15,7 +15,7 @@ const Galery = () => {
     { src: "/gambar/couple6.jpg" },
     { src: "/gambar/couple7.jpg" },
   ];
-  const src = "/gambar/Galerry.png";
+  const src = "/gambar/Galerry.webp";
   const [photoIndex, setPhotoIndex] = useState(0);
   const [open, setOpen] = useState(false);
 

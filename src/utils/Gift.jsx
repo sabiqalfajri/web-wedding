@@ -4,35 +4,7 @@ import { FaCheck, FaCopy } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Gift = () => {
-  useEffect(() => {
-    // Memuat script snowfall.js saat komponen mount
-    const script = document.createElement("script");
-    script.src = "/snowfall.min.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    // Menjalankan efek salju setelah script di-load
-    script.onload = () => {
-      window.snowFall.snow(document.body, {
-        flakeCount: 100, // Sesuaikan dengan kebutuhan
-        flakeColor: "#ffffff",
-        minSize: 4,
-        maxSize: 10,
-        minSpeed: 1,
-        maxSpeed: 3,
-      });
-    };
-
-    // Cleanup untuk menghapus efek salju saat komponen di-unmount
-    return () => {
-      if (window.snowFall && window.snowFall.clear) {
-        window.snowFall.clear();
-      }
-      document.body.removeChild(script);
-    };
-  }, []);
-
-  const src = "/gambar/backgroundAlamat.png";
+  const src = "/gambar/background-alamat.webp";
   const [copy, setCopy] = useState({
     bri: false,
     bni: false,
@@ -80,7 +52,7 @@ const Gift = () => {
           duration: 2,
         }}
         viewport={{ once: true }}
-        src="/gambar/top-kanan.png"
+        src="/gambar/top-kanan.webp"
         alt=""
         style={{
           position: "absolute",
@@ -100,7 +72,7 @@ const Gift = () => {
           duration: 2,
         }}
         viewport={{ once: true }}
-        src="/gambar/top-kiri.png"
+        src="/gambar/top-kiri.webp"
         alt=""
         style={{
           position: "absolute",
@@ -120,7 +92,7 @@ const Gift = () => {
           duration: 2,
         }}
         viewport={{ once: true }}
-        src="/gambar/flower-bottom-kiri.png"
+        src="/gambar/flower-bottom-kiri.webp"
         alt=""
         style={{
           position: "absolute",
@@ -140,7 +112,7 @@ const Gift = () => {
           duration: 2,
         }}
         viewport={{ once: true }}
-        src="/gambar/flower-bottom-kanan.png"
+        src="/gambar/flower-bottom-kanan.webp"
         alt=""
         style={{
           position: "absolute",
@@ -179,7 +151,8 @@ const Gift = () => {
             borderBottomLeftRadius: "18px",
             position: "relative",
           }}
-          src="/gambar/bri-ismail.svg"
+          loading="lazy"
+          src="/gambar/bri-ismail.webp"
           alt="bri-ismail"
         />
         <p id="bri" style={{ display: "none" }}>
@@ -227,10 +200,10 @@ const Gift = () => {
             borderBottomRightRadius: "18px",
             borderBottomLeftRadius: "18px",
             position: "relative",
-
             lineHeight: "none",
           }}
-          src="/gambar/bri-mistriasih.svg"
+          loading="lazy"
+          src="/gambar/bri-mistriasih.webp"
           alt="bni-logo"
         />
         <p id="bni" style={{ display: "none" }}>

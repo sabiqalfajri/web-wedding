@@ -139,7 +139,7 @@ const Closing = () => {
         style={{
           height: "100vh",
           width: "100%",
-          background: "url('/gambar/brown-closing.png')",
+          background: "url('/gambar/brown-closing.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           zIndex: 2,
@@ -163,7 +163,7 @@ const Closing = () => {
             duration: 2,
           }}
           viewport={{ once: true }}
-          src="/gambar/brown-floral-top.png"
+          src="/gambar/brown-floral-top.webp"
           alt=""
           style={{
             position: "absolute",
@@ -183,7 +183,7 @@ const Closing = () => {
             duration: 2,
           }}
           viewport={{ once: true }}
-          src="/gambar/brown-floral-bottom.png"
+          src="/gambar/brown-floral-bottom.webp"
           alt=""
           style={{
             position: "absolute",
@@ -195,7 +195,7 @@ const Closing = () => {
         {/* selesai floral brown */}
         <img
           className="gambar-couple"
-          src="/gambar/couple6.jpg"
+          src="/gambar/couple6.webp"
           alt=""
           style={{
             position: "absolute",
@@ -204,6 +204,7 @@ const Closing = () => {
             marginTop: "2rem",
             zIndex: 1,
           }}
+          loading="lazy"
         />
 
         <div

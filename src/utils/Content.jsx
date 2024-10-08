@@ -4,7 +4,7 @@ import Journey from "./Journey";
 import Galery from "./Galery";
 
 const Content = ({ show, handleShow }) => {
-  const src = "/gambar/revisiFramer.png";
+  const src = "/gambar/revisiFramer.webp";
 
   return (
     <>
@@ -37,7 +37,7 @@ const Content = ({ show, handleShow }) => {
             borderTopRightRadius: "20rem",
             paddingTop: "1rem",
           }}
-          src="/gambar/ismail.jpg"
+          src="/gambar/ismail.webp"
           alt="Calon satu"
         />
 
@@ -100,7 +100,7 @@ const Content = ({ show, handleShow }) => {
               borderTopRightRadius: "20rem",
               paddingTop: "1rem",
             }}
-            src="/gambar/mistriasih.jpg"
+            src="/gambar/mistriasih.webp"
             alt="Calon kedua"
           />
 

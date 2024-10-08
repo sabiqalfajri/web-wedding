@@ -13,7 +13,7 @@ const Alamat = () => {
     // URL ke lokasi di Google Maps
     window.open("https://maps.app.goo.gl/73iwLLPMTJBXb5qS6", "_blank");
   };
-  const src = "/gambar/backgroundAlamat.png";
+  const src = "/gambar/background-alamat.webp";
   return (
     <>
       <div
@@ -41,7 +41,7 @@ const Alamat = () => {
             duration: 2,
           }}
           viewport={{ once: true }}
-          src="/gambar/flower-kiri.png"
+          src="/gambar/flower-kiri.webp"
           alt=""
           style={{
             position: "absolute",
@@ -61,7 +61,7 @@ const Alamat = () => {
             duration: 2,
           }}
           viewport={{ once: true }}
-          src="/gambar/flower-kanan.png"
+          src="/gambar/flower-kanan.webp"
           alt=""
           style={{
             position: "absolute",
@@ -81,7 +81,7 @@ const Alamat = () => {
             duration: 2,
           }}
           viewport={{ once: true }}
-          src="/gambar/flower-top-kiri.png"
+          src="/gambar/flower-top-kiri.webp"
           alt=""
           style={{
             position: "absolute",
@@ -101,7 +101,7 @@ const Alamat = () => {
             duration: 2,
           }}
           viewport={{ once: true }}
-          src="/gambar/flower-top-kanan.png"
+          src="/gambar/flower-top-kanan.webp"
           alt=""
           style={{
             position: "absolute",

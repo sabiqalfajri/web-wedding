@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
 
 const Surat = () => {
-  const src = "/gambar/Paper.png";
+  const src = "/gambar/Paper.webp";
 
   const text =
     "Dan diantara tanda tanda kekuasaan - Nya ialah diciptakan-Nya untukmu pasangan hidup dari jenismu sendiri, agar kamu mendapat ketenangan hati dan dijadikan-Nya kasih sayang diantara kamu, sesungguhnya yang demikian menjadi tanda-tanda kebesaran-Nya bagi orang-orang yang berfikir.";

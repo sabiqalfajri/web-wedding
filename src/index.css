@@ -169,7 +169,7 @@ body {
 }
 
 .parallax {
-  background-image: url("/gambar/backgorund-slide2.png");
+  background-image: url("/gambar/backgorund-slide2.webp");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;

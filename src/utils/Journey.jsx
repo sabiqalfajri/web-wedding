@@ -11,7 +11,7 @@ const Journey = () => {
   ];
   const [photoIndex, setPhotoIndex] = useState(0);
   const [open, setOpen] = useState(false);
-  const src = "/gambar/information.png";
+  const src = "/gambar/information.webp";
   return (
     <>
       <div

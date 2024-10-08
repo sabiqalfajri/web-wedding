@@ -24,7 +24,7 @@ const Confirm = () => {
     window.open(whatsappUrl, "_blank");
   };
 
-  const src = "/gambar/galerryBackground.png";
+  const src = "/gambar/background-confirmation.webp";
   return (
     <>
       <div
@@ -61,6 +61,7 @@ const Confirm = () => {
             ease: "easeInOut",
             delay: 0.2,
           }}
+          viewport={{ once: true }}
           className="d-flex justify-content-center mb-5"
         >
           <Form
